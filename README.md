@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-  <img src="Ressources/League_Of_Audit.png" alt="Chargement de l'image" style="max-width: 100%; width: 100%; height: auto;" />
+  <img src="Ressources/League_Of_Audit.png" alt="Chargement de l'image" style="max-width: 150%; width: 150%; height: auto;" />
 </div>
 
 
