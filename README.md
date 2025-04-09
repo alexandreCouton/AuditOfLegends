@@ -3,13 +3,13 @@
 </div>
 
 
-# T4
+# ☛ Notre équipe
 
-<span style="color:red">L’équipe **Vos Gros Darons**</span>, composée de :
-* **Antoine CHAUMET** 
-* **Alexandre COUTON** 
-* **Amine BELHAJ** 
-* **Auguste DELAYE**
+<span style="color:red">L’équipe 🔥**Vos Gros Darons**🔥</span>, composée de :
+🔸 **Antoine CHAUMET** 
+🔸 **Alexandre COUTON** 
+🔸 **Amine BELHAJ** 
+🔸 **Auguste DELAYE**
 
 Vous présente leur projet **T4**.
 
@@ -22,36 +22,42 @@ Vous présente leur projet **T4**.
  - Prenom nom : Lien 3
 
 
-## Présentation du projet
 
-Ce projet a pour but de réaliser un jeu serieux sur le métier d'audit dans une université afin d'aider des débutants dans ce domaine pour leurs donner un avant goût de la réalisation de leur premier audit.
+# ☛ Présentation du projet
+
+Ce projet a pour but de réaliser un **jeu serieux** sur le métier **d'audit dans une université** afin d'aider des débutants dans ce domaine pour leurs donner **un avant goût de la réalisation de leur premier audit**.
+ 
+⚠️ **Attention** ⚠️ Il peut être intéressant pour vous de **bien comprendre le thême**. C'est pourquoi nous vous invitons à vous renseigner en lisant [**notre wiki**](wiki.md).
 
 
-### Audit of Legends
 
-Un jeu serieux sur le metier d'audit en université qui se focalise sur la difficulté et les méthodes de récuperation des informations auprès des audités.
+# ☛ Audit of Legends
 
+Un **jeu serieux sur le metier d'audit en université** qui se focalise sur **la difficulté et les méthodes de récuperation des informations auprès des audités**.
 
 > Inclure des screenshots du jeu / une vidéo de gameplay un peu en mode gif
 
 
-### Procédures d'installation et d'exécution
+
+# ☛ Procédures d'installation et d'exécution
 
 Tutoriel d'installation du projet :
  - Ouvrez votre terminal bash et tapez la commande suivante :
+
 ```bash
 git clone git@git.unistra.fr:MET25-T4-C/t4.git
 ```
+
 > Si vous n'avez pas encore votre clé ssh, il se peut que vous ayez à renseigner votre identifiant et mot de passe unistra.
 
- #### Pour Windows
+ ## Pour Windows
 
 
- #### Pour Linux
+ ## Pour Linux
 
 
 
-### Objectifs pédagogiques
+# ☛ Objectifs pédagogiques
 
 Nous vous proposons 3 objectifs pédagogiques différents, à vous de choisir lequel / lesquels vous intéresse(ent) le plus.
 
@@ -61,39 +67,86 @@ Nous vous proposons 3 objectifs pédagogiques différents, à vous de choisir le
 
  *  
 
-#### Objectifs pédagogiques avancés 
+## Objectifs pédagogiques avancés 
 
-##### Compréhension du processus de réalisation de l'audit
+### Compréhension du processus de réalisation de l'audit
 
-Il est important pour le joueur de comprendre quelles sont **les différentes étapes d'un audit**. Pour rappel, ces différentes informations sont dans [le contexte](#deroulement-dun-audit). Il est donc aussi important de bien faire comprendre au joueur **combien de temps est passé par section du processus** de réalisation d'un audit. Cet objectif ne se focus donc **pas sur une partie** du processus mais bien **sur son ensemble**.
+Il est important pour le joueur de comprendre quelles sont **les différentes étapes d'un audit**. Pour rappel, ces différentes informations sont dans [le wiki](wiki.md). Il est donc aussi important de bien faire comprendre au joueur **combien de temps est passé par section du processus** de réalisation d'un audit. Cet objectif ne se focus donc **pas sur une partie** du processus mais bien **sur son ensemble**.
 
 
-##### Compréhension de la difficulté de la collecte d'informations
+### Compréhension de la difficulté de la collecte d'informations
 
 Contrairement à l'objectif présenté juste avant, celui-ci se concentre principalement sur **la collecte d'informations** qui se fait majoritairement par **l'échange avec des employés** et plus rarement aussi par la réalisation de test. Il faut donc bien que le joueur comprenne **la difficulté du dialogue** avec certains employés qui peuvent être **méfiant ou cherche à cacher des informations sensibles** à l'auditeur. Le joueur doit aussi comprendre que toutes informations qu'il entend ne sont **pas forcément vraies,** ou encore que certaines informations ne soient **pas forcément très utiles**.
 Afin de réaliser cet objectif, il n'est donc pas nécessaire d'inclure toutes les parties du processus de réalisation d'un audit, en revanche, leurs présence peut aider à contextualiser cette phase de dialogue avec les employés.
 
-#### Références
+## Références
 
-### Description des fonctionnalités
+# ☛ Description des fonctionnalités
 
-Les sous-sections suivantes sont données à titre indicatif et peuvent être changées.
+🔴 IMPORTANT❗🔴 : Toutes les fonctionnalités qui sont décrites dans les parties suivantes n'ont pas forcément été implémentées dans le prototype. Le prototype à été conçue pour vous donner une idée d'une potentielle base de développement, à vous de l'améliorer ou de construire une nouvelle base au cours du T3. 
 
-#### Simulation
+## Actions du joueur
 
-#### Interface
+  Nous souhaiterions que le joueur puisse au moins : 
 
-#### Actions du joueur
+    🔸 Avoir le choix entre différents sujets d'audits
 
-### Scénarios
+    🔸 Intéragir avec les personnes audités
 
-Si pertinent, décrire les scénarios possibles. Possibilité de décrire pas à pas un scénario.
+    🔸 Intéragir avec plusieurs personnes, qui possèdent des comportements à l'égart de l'auditeur
 
-### Contraintes de développement
+    🔸 Choisir avec qui il intéragit lorsqu'il le souhaite, et qu'il puisse adopter différents comportements avec cette dernière
 
-Tout ce qui doit encadrer le développement.
+    🔸 Produire un rapport uniquement à partir des informations qu'il aura découvert
 
-### Fonctionnalités et scénarios avancés
+    🔸
 
-Pareil, mais qui nécessite plus de developpement.
 
+## Logique de jeu
+
+  Dans la logique du jeu, il faudrait que :
+
+    🔸 Les différentes intéractions produisent des comportements différents
+
+    🔸 Les informations reçues ne soient pas toutes vraies
+
+    🔸 Qu'une méchanique de vérification d'information soit présente
+
+    🔸 Que le joueur ait un moyen d'être limité en terme d'actions / de temps pour représenter le temps qui passe pour bien faire comprendre au joueur qu'il n'a pas toute la vie pour faire un seul audit 
+
+    🔸
+
+
+## Interface
+
+  L'interface doit au moins pouvoir présenter :
+    
+    🔸 Un système d'intéraction avec les audités
+
+    🔸 Un affichage qui indique si le joueur à fait du bon travail ou non
+
+    🔸 Un moyen de connaitre la confiance que lui accorde les audités (qu'il soit facilement visible ou non)
+
+    🔸 
+
+
+
+# ☛ Contraintes de développement
+
+
+Au niveau de la contrainte de développement, le client vous laisse libre par rapport à la technologie utilisée, et sur quels point vous voulez appuyer votre jeu. 
+
+En revanche, il est intéressant de garder en tête que le client souhaite ce jeu dans le but de donner une première approche à des débutants dans le domaine.
+Il faut donc penser à ne pas faire un jeu trop simplifié. C'est la raison pour laquelle nous avons détaillé au mieux le métier de auditeur dans [le wiki](wiki.md).
+
+Une seule contrainte qui peut être intéressante à en déduire, est qu'il peut être plus favorable de créer des scénarios générés aléatoirement, afin de permettre aux joueurs de pouvoir réaliser plusieurs audits sur un même thême dans le but de les aider a mieux comprendre, plutôt que de les faire retenir quels choix sont les meilleurs dans un scénario donné. 
+
+
+
+# ☛ Fonctionnalités supplémentaires optionnelles
+
+Nous avons également pensé à d'autres ajouts qui pourraient vous intéresser : 
+
+  🔸 Ajouter un système d'actions de tests sur certains scénarios (par exemple engager une équipe de cyber sécurité pour qu'il fasse un test de faille dans le cas d'un audit )
+
+  🔸 Si le système de tests est mis en place, ajouter un système de budget maximum pour 
