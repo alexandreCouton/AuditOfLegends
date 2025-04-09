@@ -5,7 +5,7 @@
 
 # T4
 
-<span style="color: #3498db">L’équipe **VGD**</span>, composée de :
+<span style="color: #3498db">L’équipe **Vos Gros Darons**</span>, composée de :
 * **Antoine CHAUMET** 
 * **Alexandre COUTON** 
 * **Amine BELHAJ** 
