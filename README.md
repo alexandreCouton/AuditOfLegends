@@ -1,9 +1,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-<div style="text-align: center;">
-  <img src="Ressources/League_Of_Audit.png" alt="Chargement de l'image" style="max-width: 100%; width: 100%; height: auto;" />
-</div>
+<img src="Ressources/Audit_Of_Legends.png" alt="Chargement de l'image" style="display: block; margin: 0 auto;">
 
+</br>
+</br>
 
 # ☛ Notre équipe
 
