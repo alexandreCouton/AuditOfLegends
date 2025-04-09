@@ -5,13 +5,15 @@
 
 # T4
 
-<span style="color: #3498db">L’équipe **Vos Gros Darons**</span>, composée de :
+<span style="color:red">L’équipe **Vos Gros Darons**</span>, composée de :
 * **Antoine CHAUMET** 
 * **Alexandre COUTON** 
 * **Amine BELHAJ** 
 * **Auguste DELAYE**
 
 Vous présente leur projet **T4**.
+
+---
 
 **Vos liens pour vos évaluations :** 
 
