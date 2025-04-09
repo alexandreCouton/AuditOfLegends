@@ -1,5 +1,6 @@
-![Chargement de la bannière](Ressources/League_Of_Audit.png)
-
+<p align="center">
+  <img src="Ressources/League_Of_Audit.png" alt="Chargement de l'image" style="width: 100%;" />
+</p>
 # T4
 
 - Nom du groupe : **VGD**
