@@ -1,6 +1,6 @@
 # Toutes les informations sur le métier d'auditeur et ce qu'est un audit.
 
-## 👨‍💼 Le métier d’auditeur interne
+## 👨 Le métier d’auditeur interne
 
 L’auditeur interne est un **acteur indépendant et objectif** au sein de l’université.  
 Il évalue les **processus organisationnels** pour :
