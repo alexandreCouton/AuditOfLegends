@@ -1,10 +1,3 @@
-<style>
-  body {
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-  }
-</style>
-
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 <div style="text-align: center;">
@@ -16,9 +9,12 @@
 
 L’équipe 🔥**Vos Gros Darons**🔥, composée de :
 
-🔸 **Antoine CHAUMET** </br>
-🔸 **Alexandre COUTON** </br>
-🔸 **Amine BELHAJ** </br>
+🔸 **Antoine CHAUMET** 
+
+🔸 **Alexandre COUTON** 
+
+🔸 **Amine BELHAJ** 
+
 🔸 **Auguste DELAYE**
 
 Vous présente leur projet **T4**.
