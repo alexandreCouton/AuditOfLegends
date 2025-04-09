@@ -1,6 +1,6 @@
 # Toutes les informations sur le métier d'auditeur et ce qu'est un audit.
 
-## 🔍 Le métier d’auditeur interne
+## 👨‍💼 Le métier d’auditeur interne
 
 L’auditeur interne est un **acteur indépendant et objectif** au sein de l’université.  
 Il évalue les **processus organisationnels** pour :
@@ -20,7 +20,7 @@ Il est **rattaché administrativement** à la **Direction Générale ou la Prés
 
 ---
 
-## 🧠 Qu’est-ce qu’un audit interne ?
+## 🗒️ Qu’est-ce qu’un audit interne ?
 
 L’audit est une activité structurée qui permet de :
 1. **Observer** un processus en profondeur
@@ -34,7 +34,7 @@ Il s’étale sur **4 à 6 mois**, selon la complexité du processus.
 
 ---
 
-## 🛠️ Déroulement d’un audit
+## 📅 Déroulement d’un audit
 
 ### 1. Phase de préparation (~40% du temps)
 - **Ordre de mission** : défini par la Présidence, DGS ou comité d’audit, c'est le thème de l'audit
