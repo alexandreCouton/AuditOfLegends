@@ -1,6 +1,6 @@
 # T4
 
-- Nom du groupe : 
+- Nom du groupe : **VGD**
 - Membres du groupe : 
 - Liens vers les évaluations T4 :
   - lien 1
@@ -9,127 +9,54 @@
 
 ## Présentation du projet
 
-Présentation globale en une phrase.
-
-### Contextualisation
-
-#### 🔍 Le métier d’auditeur interne
-
-L’auditeur interne est un **acteur indépendant et objectif** au sein de l’université.  
-Il évalue les **processus organisationnels** pour :
-- Donner une **assurance sur leur efficacité**
-- Identifier des **risques**
-- **Formuler des recommandations** d’amélioration
-
-Il est **rattaché administrativement** à la **Direction Générale ou la Présidence**, mais son **indépendance** est assurée par un **double rattachement** à un **comité d’audit** externe (cf. [Charte d'audit](https://www.unistra.fr/service-audit-interne)).
-
-##### Valeurs clés :
-- **Intégrité**
-- **Objectivité**
-- **Compétence**
-- **Indépendance**
-
-> L’auditeur n’est **ni un juge, ni un policier**, mais un **conseiller**. Il n’évalue jamais une personne, uniquement un **dispositif, un processus**.
-
----
-
-#### 🧠 Qu’est-ce qu’un audit interne ?
-
-L’audit est une activité structurée qui permet de :
-1. **Observer** un processus en profondeur
-2. **Évaluer sa performance et ses risques**
-3. **Proposer des plans d’amélioration**
-
-L’audit est **passif** : il **observe, questionne, comprend**, sans intervenir.  
-Il s’étale sur **4 à 6 mois**, selon la complexité du processus.
-
-> On ne cherche **pas à sanctionner** mais à **aider**.
-
----
-
-#### 🛠️ Déroulement d’un audit
-
-##### 1. Phase de préparation (~40% du temps)
-- **Ordre de mission** : défini par la Présidence, DGS ou comité d’audit, c'est le thème de l'audit
-- **Compréhension du processus** (formation, recherches, échanges)
-- **Identification des risques potentiels**
-
-##### 2. Réalisation
-- Réunion de lancement
-- **Entretiens / observations** (~30 personnes en moyenne)
-- Tests / vérifications sur les processus
-- Rédaction du rapport provisoire
-- Envoi aux personnes auditées pour des **retours et ajustements**
-
-##### 3. Communication
-- Rapport final
-- **Plan d’action** structuré
-- **Présentation** au comité d’audit, puis à la Présidence/Direction Générale
-
----
-
-#### 📝 Contenu du rapport d’audit
-
-- **Observations** détaillées
-- **Recommandations concrètes** (plan d’action)
-- Liste des **personnes rencontrées** (sans attribution directe)
-- Précision en cas de **non-coopération** : signalement d’une atteinte à l’indépendance
-
----
-
-#### 📌 Exemples de sujets d’audit
-
-- **Gestion de crise** (panne d’électricité, ventilation, etc.)
-- **Processus d’achat**
-- **Dispositifs d’accueil des étudiants**
-- **Communication institutionnelle**
-- **Sécurité des accès et habilitations dans les SI**
-- **Recrutement**
-
----
-
-#### ⚠️ Particularités
-
-- **L’indépendance** est primordiale : refus de coopération = drapeau rouge
-- Le **comité d’audit externe** est **le seul habilité à juger la qualité** d’un audit
-- Les audités **peuvent commenter** les solutions proposées
-- La mise en œuvre des recommandations est **fortement recommandée**, bien que **non obligatoire**
-
----
-
-#### 🤝 Relation avec les audités
-
-- Ils peuvent être **méfiants au début**, par peur d’être jugés
-- L’auditeur doit :
-  - **Mettre en confiance**
-  - **Clarifier la démarche**
-  - **Valoriser les échanges**
-- Au final, les audités sont souvent **satisfaits** des réponses apportées à leurs problématiques
-
----
-
-#### 🧩 À retenir
-
-- L’audit est **un outil de pilotage stratégique**, au service de l’université
-- Il est guidé par **la charte d’audit** (cf. [Charte officielle](https://www.unistra.fr/service-audit-interne))
-- Il repose sur une **démarche collaborative**, **transparente** et **améliorative**
+Ce projet a pour but de réaliser un jeu serieux sur le métier d'audit dans une université afin d'aider des débutants dans ce domaine pour leurs donner un avant goût de la réalisation de leur premier audit.
 
 
-### Captures d'écran
+### Audit of Legends
+
+Un jeu serieux sur le metier d'audit en université qui se focalise sur la difficulté et les méthodes de récuperation des informations auprès des audités.
+
+
+> Inclure des screenshots du jeu / une vidéo de gameplay un peu en mode gif
+
 
 ### Procédures d'installation et d'exécution
 
-## Cahier des charges
+Tutoriel d'installation du projet :
+ - Ouvrez votre terminal bash et tapez la commande suivante :
+```bash
+git clone git@git.unistra.fr:MET25-T4-C/t4.git
+```
+> Si vous n'avez pas encore votre clé ssh, il se peut que vous ayez à renseigner votre identifiant et mot de passe unistra.
 
-Pour un exemple de ce qui est attenu, voir https://gitlab.unistra.fr/T234/t4-exemple
+ #### Pour Windows
+
+
+ #### Pour Linux
+
+
 
 ### Objectifs pédagogiques
 
-Identifier 1 à 3 objectifs, avec un titre et une explication d'une phrase.
+Nous vous proposons 3 objectifs pédagogiques différents, à vous de choisir lequel / lesquels vous intéresse(ent) le plus.
+
+ * Compréhension du processus de réalisation de l'audit.
+
+ * Compréhension de la difficulté de la collecte d'informations.
+
+ *  
 
 #### Objectifs pédagogiques avancés 
 
-Pareil, mais qui nécessite plus de developpement.
+##### Compréhension du processus de réalisation de l'audit
+
+Il est important pour le joueur de comprendre quelles sont **les différentes étapes d'un audit**. Pour rappel, ces différentes informations sont dans [le contexte](#deroulement-dun-audit). Il est donc aussi important de bien faire comprendre au joueur **combien de temps est passé par section du processus** de réalisation d'un audit. Cet objectif ne se focus donc **pas sur une partie** du processus mais bien **sur son ensemble**.
+
+
+##### Compréhension de la difficulté de la collecte d'informations
+
+Contrairement à l'objectif présenté juste avant, celui-ci se concentre principalement sur **la collecte d'informations** qui se fait majoritairement par **l'échange avec des employés** et plus rarement aussi par la réalisation de test. Il faut donc bien que le joueur comprenne **la difficulté du dialogue** avec certains employés qui peuvent être **méfiant ou cherche à cacher des informations sensibles** à l'auditeur. Le joueur doit aussi comprendre que toutes informations qu'il entend ne sont **pas forcément vraies,** ou encore que certaines informations ne soient **pas forcément très utiles**.
+Afin de réaliser cet objectif, il n'est donc pas nécessaire d'inclure toutes les parties du processus de réalisation d'un audit, en revanche, leurs présence peut aider à contextualiser cette phase de dialogue avec les employés.
 
 #### Références
 
