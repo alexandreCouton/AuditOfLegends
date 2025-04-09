@@ -1,4 +1,4 @@
-(Ressources/League_Of_Audit.png)
+![Chargement de la bannière](Ressources/League_Of_Audit.png)
 
 # T4
 
