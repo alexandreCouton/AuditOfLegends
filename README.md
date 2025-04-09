@@ -1,6 +1,8 @@
-<p align="center">
-  <img src="Ressources/League_Of_Audit.png" alt="Chargement de l'image" style="width: 100%;" />
-</p>
+<div style="text-align: center;">
+  <img src="Ressources/League_Of_Audit.png" alt="Chargement de l'image" style="max-width: 100%; width: 100%; height: auto;" />
+</div>
+
+
 # T4
 
 - Nom du groupe : **VGD**
