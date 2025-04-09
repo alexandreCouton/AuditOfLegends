@@ -5,12 +5,20 @@
 
 # T4
 
-- Nom du groupe : **VGD**
-- Membres du groupe : 
-- Liens vers les évaluations T4 :
-  - lien 1
-  - lien 2
-  - ...
+<span style="color: #3498db">L’équipe **VGD**</span>, composée de :
+* **Antoine CHAUMET** 
+* **Alexandre COUTON** 
+* **Amine BELHAJ** 
+* **Auguste DELAYE**
+
+Vous présente leur projet **T4**.
+
+**Vos liens pour vos évaluations :** 
+
+ - Prenom nom : Lien 1
+ - Prenom nom : Lien 2
+ - Prenom nom : Lien 3
+
 
 ## Présentation du projet
 
