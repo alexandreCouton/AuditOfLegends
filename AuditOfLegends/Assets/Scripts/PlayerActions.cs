@@ -37,6 +37,17 @@ public class PlayerActions : MonoBehaviour
     {
         Person person = gameManager.GetPerson(personIndex);
         float randomValue = Random.Range(0f, 100f);
+        
+        // Réduire la confiance à chaque question posée
+        bool trustLevelChanged = person.DecreaseTrust(10f);
+        
+        if (trustLevelChanged)
+        {
+            // Afficher un message spécial si le niveau de confiance a changé
+            string trustMessage = gameManager.GetPersonalizedResponse(person, "trustDecreased");
+            DisplayMessage(person, trustMessage);
+            return; // Arrêter l'action pour mettre l'accent sur le changement de confiance
+        }
 
         if (randomValue <= person.knowledgePercentage)
         {
@@ -62,17 +73,36 @@ public class PlayerActions : MonoBehaviour
         }
         else
         {
-            // Le personnage ne sait pas
+            // Le personnage ne sait pas - utiliser une information bidon aléatoire
+            string randomBogusInfo = informationManager.GetRandomBogusInformation();
             string message = gameManager.GetPersonalizedResponse(person, "knowledgeFailure");
+            
+            // 50% de chance de donner une info bidon au lieu de simplement dire qu'il ne sait pas
+            if (Random.Range(0f, 1f) > 0.5f)
+            {
+                message = gameManager.GetPersonalizedResponse(person, "knowledgeSuccess", randomBogusInfo);
+            }
+            
             DisplayMessage(person, message);
         }
     }
+
 
     // Action pour vérifier la confiance et sélectionner une information
     public void CheckTrust(int personIndex)
     {
         Person person = gameManager.GetPerson(personIndex);
-
+    
+        // Réduire la confiance à chaque question posée
+        bool trustLevelChanged = person.DecreaseTrust(10f);
+        
+        if (trustLevelChanged)
+        {
+            // Afficher un message spécial si le niveau de confiance a changé
+            string trustMessage = gameManager.GetPersonalizedResponse(person, "trustDecreased");
+            DisplayMessage(person, trustMessage);
+            return; // Arrêter l'action pour mettre l'accent sur le changement de confiance
+        }
         // Vérifier s'il y a des informations non vérifiées
         if (informationManager.HasUnverifiedInformation())
         {

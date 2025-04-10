@@ -38,6 +38,21 @@ public class InformationManager : MonoBehaviour
         new InfoTextPair { shortText = "Accès physique restreint", longText = "L'accès aux serveurs physiques est strictement contrôlé.", isTrue = true }
     };
     
+    // Liste d'informations bidon pour les réponses quand un personnage ne sait pas
+    private List<string> bogusInformation = new List<string>
+    {
+        "L'imprimante n'est pas sécurisée",
+        "Le stagiaire utilise '123456' comme mot de passe",
+        "Quelqu'un a laissé sa session ouverte hier",
+        "Le badge de sécurité est facile à copier",
+        "On utilise encore Windows XP sur certains postes",
+        "Il y a un post-it avec des mots de passe sur l'écran d'Éric",
+        "Le réseau wifi invité n'a pas changé de mot de passe depuis 2 ans",
+        "La porte du local serveur est souvent laissée ouverte",
+        "Les anciens employés gardent leur accès email",
+        "Personne ne verrouille son ordinateur pendant la pause déjeuner"
+    };
+    
     [SerializeField] private int numberOfButtons = 5;
     
     private List<Information> activeInformations = new List<Information>();
@@ -91,6 +106,16 @@ public class InformationManager : MonoBehaviour
         usedInformationIndices.Add(selectedIndex);
         
         return availableInformations[selectedIndex];
+    }
+    
+    // Récupérer une information bidon aléatoire
+    public string GetRandomBogusInformation()
+    {
+        if (bogusInformation.Count == 0)
+            return "Je n'ai rien d'intéressant à dire.";
+            
+        int randomIndex = Random.Range(0, bogusInformation.Count);
+        return bogusInformation[randomIndex];
     }
     
     // Récupérer la première information vide
