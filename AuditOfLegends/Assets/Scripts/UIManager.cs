@@ -7,19 +7,19 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
     [SerializeField] private InformationManager informationManager;
-    
+
     [Header("Character Interaction Buttons")]
     [SerializeField] private Button[] increaseTrustButtons;
     [SerializeField] private Button[] checkKnowledgeButtons;
     [SerializeField] private Button[] checkTrustButtons;
-    
+
     [Header("Information Buttons")]
     [SerializeField] private InformationButton[] informationButtons;
-    
+
     [Header("UI Elements")]
     [SerializeField] private TextMeshProUGUI messageDisplay;
     [SerializeField] private float messageDuration = 3f;
-    
+
     private PlayerActions playerActions;
     private List<Person> people;
     private float messageTimer;
@@ -30,24 +30,24 @@ public class UIManager : MonoBehaviour
         // Initialiser PlayerActions avec GameManager
         if (gameManager == null)
             gameManager = FindObjectOfType<GameManager>();
-            
+
         playerActions = new PlayerActions(gameManager);
         people = gameManager.GetPeople();
-        
+
         // Initialiser les informations
         if (informationManager == null)
             informationManager = FindObjectOfType<InformationManager>();
-            
+
         informationManager.InitializeInformations();
-        
+
         // Initialiser l'affichage des messages
         if (messageDisplay != null)
             messageDisplay.gameObject.SetActive(false);
-        
+
         // Associer les informations aux boutons
         InitializeInformationButtons();
     }
-    
+
     void Update()
     {
         // Gestion de l'affichage temporaire des messages
@@ -61,7 +61,7 @@ public class UIManager : MonoBehaviour
             }
         }
     }
-    
+
     // Méthode pour afficher un message temporairement
     public void DisplayMessage(string message)
     {
@@ -73,7 +73,7 @@ public class UIManager : MonoBehaviour
             messageActive = true;
         }
     }
-    
+
     private void InitializeInformationButtons()
     {
         // Vérifier si on a le bon nombre de boutons
@@ -82,7 +82,7 @@ public class UIManager : MonoBehaviour
             Debug.LogWarning("Pas de boutons d'information assignés!");
             return;
         }
-        
+
         // Associer chaque information à un bouton
         for (int i = 0; i < informationButtons.Length; i++)
         {
@@ -90,7 +90,7 @@ public class UIManager : MonoBehaviour
             {
                 Information info = informationManager.GetInformation(i);
                 informationButtons[i].SetInformation(info, i);
-                
+
                 // Configuration du bouton pour qu'il appelle VerifyInformation quand cliqué
                 int buttonIndex = i; // Nécessaire pour la capture dans la lambda
                 Button buttonComponent = informationButtons[i].GetComponent<Button>();
@@ -102,7 +102,7 @@ public class UIManager : MonoBehaviour
             }
         }
     }
-    
+
     // Mettre à jour tous les boutons d'information
     public void UpdateInformationButtons()
     {
@@ -114,7 +114,7 @@ public class UIManager : MonoBehaviour
             }
         }
     }
-    
+
     // Appelé quand un bouton d'information est cliqué
     public void OnInformationButtonClicked(int informationIndex)
     {
@@ -137,7 +137,7 @@ public class UIManager : MonoBehaviour
     {
         playerActions.CheckTrust(personIndex);
     }
-    
+
     // Méthode pour réinitialiser les informations (pour un nouveau tour par exemple)
     public void ResetInformations()
     {
