@@ -127,6 +127,10 @@ public class UIManager : MonoBehaviour
     {
         playerActions.IncreaseTrust(personIndex);
     }
+    public void OnDecreaseTrustButtonClicked(int personIndex)
+    {
+        playerActions.DecreaseTrust(personIndex);
+    }
 
     public void OnCheckKnowledgeButtonClicked(int personIndex)
     {
