@@ -248,7 +248,7 @@ MonoBehaviour:
     plus d\u2019attention : \r\n\n- Mises \xE0 jour r\xE9guli\xE8res des logiciels
     et du syst\xE8me d\u2019exploitation\r\n\r\n- Pare-feu et contr\xF4le des acc\xE8s
     pour limiter les connexions non autoris\xE9es\r\n\r\n- Sauvegardes fr\xE9quentes
-    des donn\xE9es\r\n\r\n -Chiffrement des communications (ex. HTTPS, SSH)\r\n\r\n\r-
+    des donn\xE9es\r\n\r\n - Chiffrement des communications (ex. HTTPS, SSH)\r\n\r\n\r-
     Surveillance des journaux et d\xE9tection des comportements suspects\r\n"
   delay: 0.015
   typingSound: {fileID: 280803769}
@@ -495,8 +495,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -563,8 +563,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.4824, y: 1.4824}
-  m_SizeDelta: {x: 1768.4225, y: 948.3591}
+  m_AnchoredPosition: {x: -20.7543, y: -7.4122}
+  m_SizeDelta: {x: 1492.6888, y: 533.2758}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1150772668
 GameObject:
@@ -616,14 +616,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -2059896578543336145, guid: 0e04f6e265daa6e4d84e4a88f448333e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -815,7 +815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 882.5, y: -472.3}
+  m_AnchoredPosition: {x: 715.26, y: -262.02}
   m_SizeDelta: {x: 109.5969, y: 89.2977}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916818334
