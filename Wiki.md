@@ -1,9 +1,9 @@
-
 [![Voir le README](https://img.shields.io/badge/Voir%20le%20README-brown)](README.md)
 
 # Toutes les informations sur le métier d'auditeur et ce qu'est un audit.
 
-Vous pouvez revenir au readme à tout moment en cliquant [ici](README.md)
+Vous pouvez revenir au README à tout moment en cliquant [ici](README.md)
+
 ## 👨 Le métier d’auditeur interne
 
 L’auditeur interne est un **acteur indépendant et objectif** au sein de l’université.  
@@ -104,4 +104,3 @@ Il s’étale sur **4 à 6 mois**, selon la complexité du processus.
 - L’audit est **un outil de pilotage stratégique**, au service de l’université
 - Il est guidé par **la charte d’audit** (cf. [Charte officielle](https://www.unistra.fr/service-audit-interne))
 - Il repose sur une **démarche collaborative**, **transparente** et **améliorative**
-
