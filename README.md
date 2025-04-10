@@ -79,7 +79,7 @@ Nous vous proposons 3 objectifs pédagogiques différents, à vous de choisir le
 
  🔸 Compréhension de la difficulté de la collecte d'informations.
 
- 🔸  
+ 🔸 Compréhension de l'importance de la réalisation d'un audit.
  
 </br>
 
@@ -91,18 +91,67 @@ Nous vous proposons 3 objectifs pédagogiques différents, à vous de choisir le
 
 Il est important pour le joueur de comprendre quelles sont **les différentes étapes d'un audit**. Pour rappel, ces différentes informations sont dans [le wiki](Wiki.md). Il est donc aussi important de bien faire comprendre au joueur **combien de temps est passé par section du processus** de réalisation d'un audit. Cet objectif ne se focus donc **pas sur une partie** du processus mais bien **sur son ensemble**.
 
+Comme expliqué dans le wiki, le joueur doit bien passer par les trois grande phases suivantes : **Préparation, réalisation et enfin communication**.
+
+Le joueur devra donc apprendre à **gérer son temps efficacement** en fonction des priorités du processus d’audit. Il est important de **ne pas négliger la phase de préparation**, même si elle ne représente pas la partie la plus longue du temps global, car **une préparation insuffisante** risquerait de rendre la phase de réalisation **moins pertinente et moins efficace**.
+
+Dans le cadre de ce processus, on souhaite que le joueur, à la fin quelques parties, ait **compris l'importance de bien gérer ses ressources**, et ait déjà une idée de comment les organiser.
+
+De plus, en apprenant à équilibrer les phases d’audit et à comprendre leur interdépendance, le joueur pourra **mieux saisir la complexité et l'importance de l’audit interne**.
+
 </br>
 
 ### Compréhension de la difficulté de la collecte d'informations
 
-Contrairement à l'objectif présenté juste avant, celui-ci se concentre principalement sur **la collecte d'informations** qui se fait majoritairement par **l'échange avec des employés** et plus rarement aussi par la réalisation de test. Il faut donc bien que le joueur comprenne **la difficulté du dialogue** avec certains employés qui peuvent être **méfiant ou cherche à cacher des informations sensibles** à l'auditeur. Le joueur doit aussi comprendre que toutes informations qu'il entend ne sont **pas forcément vraies,** ou encore que certaines informations ne soient **pas forcément très utiles**.
-Afin de réaliser cet objectif, il n'est donc pas nécessaire d'inclure toutes les parties du processus de réalisation d'un audit, en revanche, leurs présence peut aider à contextualiser cette phase de dialogue avec les employés.
+L'objectif de cette partie du jeu est de faire comprendre au joueur **les défis de la collecte d'informations** dans un audit interne, en particulier lorsqu'il s'agit **d'interagir avec des employés**. Contrairement aux autres phases de l’audit, cette étape repose largement sur **les échanges humains** : le joueur doit apprendre à gérer des situations où l’information est **difficile à obtenir**, parfois **volontairement cachée ou non fiable**. Le joueur doit aussi comprendre que toutes les informations qu'il récolte ne sont **pas forcément exactes ou utiles**, ce qui complique d’autant la tâche d’audit.
+
+La collecte d'informations est une étape clé de l’audit, car elle permet de comprendre le fonctionnement réel d’un processus et de détecter des anomalies ou des points d’amélioration. Cependant, elle comporte plusieurs défis liés à la nature humaine : 
+
+  1. La **difficulté du dialogue** avec les employés (Méfiance et réticence, réticence à partager des informations sensibles, obstacles à la coopération)
+
+  2. Les informations ne sont **pas toujours fiables** (Informations contradictoires, biais dans les témoignages, brouillard d'informations)
+
+  3. Certaines informations ne sont **pas utiles** (Pertinence des données, sélection des sources d'information)
+
+Dans ce contexte, le joueur devra interagir avec les employés, en particulier dans des **entretiens et des discussions informelles**.
+
+Le jeu peut également contextualiser cette phase en montrant que l’audit ne se résume pas à la collecte d’informations brutes, mais qu’il s'agit également d’une phase de discernement. En parallèle, le joueur pourra voir **qu'une bonne collecte d’informations** permet de **mieux identifier les risques**, les anomalies ou les défaillances dans le processus audité. 
+
+Malgrès ce contexte, il faudra tout de même bien insister sur cette partie d'échanges si vous choisissez cet objectif.
+
+Grâce à cet objectif, le joueur apprendra à **gérer la complexité** de cette phase et à **affiner ses compétences** en matière de **communication**, d’**analyse critique**, et de **prise de décision** dans un environnement complexe et parfois hostile.
 
 </br>
 
-## ✤ Références
+### Compréhension de l'importance de la réalisation d'un audit
 
-????????
+L'objectif de cet exercice est de faire comprendre au joueur **l'impact rée**l d'un audit interne et **son importanc**e dans **l’amélioration des processus d’une organisation**. L'objectif se concentrera principalement sur **la rédaction du rapport d’audit** et **l'accompagnement dans les solutions proposées** pour résoudre les problèmes détectés. Le joueur devra saisir que l’audit **ne se limite pas à un simple état des lieux**, mais qu’il a **des conséquences directes** sur la gestion de l'organisation, en particulier dans l’identification de solutions concrètes pour améliorer les processus audités.
+
+Un audit interne a pour vocation de détecter des anomalies et des dysfonctionnements au sein des processus, mais son véritable enjeu est de **proposer des solutions** qui permettent à l'organisation de **s'améliorer**. L’audit ne se limite pas à un simple rapport sur les failles existantes, mais doit aussi **viser l'amélioration continue et la résolution de problèmes**.
+
+Avec cet objectif, le joueur n'est **pas forcément contraint à réaliser** un audit complet mais surtous à se concentrer sur **la rédaction / l'analyse d'un rapport final et des recommandations qui en découlent**.
+Il devra par la suite utiliser ce rapport pour **ammener plus facilement les solutions aux audités**.
+
+Le joueur devra également comprendre que l’audit n'est **pas une fin en soi**, mais un **moyen d’apporter des solutions pratiques** pour améliorer les processus de l’organisation.
+
+Pour mieux comprendre cet objectif, on peut imaginer le scénario suivant : 
+
+1. Rédaction interactive du rapport
+
+Le joueur sera invité à rédiger un rapport d’audit en choisissant parmi différentes options de recommandations. Le jeu pourrait fournir des feedbacks en fonction des choix du joueur pour lui indiquer si les recommandations sont adaptées, réalistes, et si elles résolvent réellement les problèmes identifiés.
+
+
+2. Scénarios de mise en œuvre des solutions
+
+Une fois les recommandations formulées, le joueur pourrait se retrouver dans des scénarios où il doit aider à la mise en œuvre de ces solutions. Il pourrait être confronté à des choix concernant le suivi des actions, l’accompagnement des équipes ou la mesure des résultats, ce qui lui permettrait de comprendre les défis pratiques liés à l’application des solutions proposées.
+
+
+3. Suivi et évaluation des résultats
+
+Des évaluations en temps réel permettent au joueur de voir l'impact de ses recommandations. Par exemple, des indicateurs de performance pourraient être présentés, montrant si les solutions ont amélioré les processus ou si des ajustements supplémentaires sont nécessaires.
+
+
+À travers cet objectif, le joueur apprendra à **identifier des failles**, formuler des **recommandations pratiques**, et surtout à **suivre leur mise en œuvre** pour garantir que l’audit a bien **un impact positif** sur l’organisation.
 
 </br>
 
@@ -182,4 +231,6 @@ Nous avons également pensé à d'autres ajouts qui pourraient vous intéresser 
 
   🔸 Ajouter un système de création de rapport plus poussé, où le joueur doit lui même indiquer quelles informations il veut mettre dans quels blocs du rapports (par exmple choix d'une groupe d'informations parmis plusieurs)
 
-  🔸 
+  🔸 Pour permettre un apprentissage plus direct et plus progressif, le joueur pourrait recevoir un feedback après chaque étape majeur du processus de réalisation de l'audit
+    
+  🔸 Le joueur pourrait également être confronté à des situations stressantes où des employés refusent de collaborer ou sont particulièrement méfiants. Il devra gérer la situation émotionnellement et apprendre à naviguer dans des dialogues difficiles.
