@@ -41,16 +41,20 @@ public class InformationManager : MonoBehaviour
     // Liste d'informations bidon pour les réponses quand un personnage ne sait pas
     private List<string> bogusInformation = new List<string>
     {
-        "L'imprimante n'est pas sécurisée",
-        "Le stagiaire utilise '123456' comme mot de passe",
-        "Quelqu'un a laissé sa session ouverte hier",
-        "Le badge de sécurité est facile à copier",
-        "On utilise encore Windows XP sur certains postes",
-        "Il y a un post-it avec des mots de passe sur l'écran d'Éric",
-        "Le réseau wifi invité n'a pas changé de mot de passe depuis 2 ans",
-        "La porte du local serveur est souvent laissée ouverte",
-        "Les anciens employés gardent leur accès email",
-        "Personne ne verrouille son ordinateur pendant la pause déjeuner"
+        "L'éclairage dans la salle des serveurs est cassé",
+        "Le personnel de ménage à pris la mauvaise habitude de débrancher tous les appareils pour nettoyer",
+        "La direction générale est la même depuis plusieurs années",
+        "Certaines personnes du service partent souvent tôt le soir",
+        "Le matériel de travail n'est pas à la pointe de la technologie",
+        "Le service ne reçoit pas beaucoup de stagiaires",
+        "Certains employés de l'entreprise ont tendance à croire que nous sommes le service de maintenance",
+        "Le débit de la connexion internet laisse parfois à désirer",
+        "Les locaux ne sont pas assez grands pour notre équipe",
+        "Ma femme m'a quitté hier...",
+        "Une personne du service est récemment partie en dépression",
+        "Je trouve que ma paie n'est pas assez élevée",
+        "Mes collègues ont tendances a ne pas comprendre mes blagues",
+        "On travaille pas très souvent sur les mêmes projet en même temps dans le service, c'est dommage"
     };
     
     [SerializeField] private int numberOfButtons = 5;

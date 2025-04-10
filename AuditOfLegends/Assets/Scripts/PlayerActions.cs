@@ -24,6 +24,14 @@ public class PlayerActions : MonoBehaviour
     // Action pour augmenter la confiance
     public void IncreaseTrust(int personIndex)
     {
+        // Vérifier si le joueur peut poser une question
+        if (!gameManager.UseQuestion())
+        {
+            string errorMessage = "Vous n'avez plus de questions disponibles !";  // Changed variable name
+            DisplayMessage(null, errorMessage);
+            return;
+        }
+
         Person person = gameManager.GetPerson(personIndex);
         person.IncreaseTrust(10f);
 
@@ -34,6 +42,13 @@ public class PlayerActions : MonoBehaviour
 
     public void DecreaseTrust(int personIndex)
     {
+        if (!gameManager.UseQuestion())
+        {
+            string errorMessage = "Vous n'avez plus de questions disponibles !";  // Changed variable name
+            DisplayMessage(null, errorMessage);
+            return;
+        }
+
         Person person = gameManager.GetPerson(personIndex);
         person.DecreaseTrust(7f);
 
@@ -45,6 +60,13 @@ public class PlayerActions : MonoBehaviour
     // Action pour vérifier les connaissances
     public void CheckKnowledge(int personIndex)
     {
+        if (!gameManager.UseQuestion())
+        {
+            string message = "Vous n'avez plus de questions disponibles !";
+            DisplayMessage(null, message);
+            return;
+        }
+        
         Person person = gameManager.GetPerson(personIndex);
         float randomValue = Random.Range(0f, 100f);
 
@@ -101,6 +123,13 @@ public class PlayerActions : MonoBehaviour
     // Action pour vérifier la confiance et sélectionner une information
     public void CheckTrust(int personIndex)
     {
+        if (!gameManager.UseQuestion())
+        {
+            string message = "Vous n'avez plus de questions disponibles !";
+            DisplayMessage(null, message);
+            return;
+        }
+
         Person person = gameManager.GetPerson(personIndex);
 
         // Réduire la confiance à chaque question posée
@@ -188,10 +217,17 @@ public class PlayerActions : MonoBehaviour
     private void DisplayMessage(Person person, string message)
     {
         // Log dans la console pour le débogage
-        Debug.Log($"{person.personName}: {message}");
+        if (person != null)
+        {
+            Debug.Log($"{person.personName}: {message}");
+        }
+        else
+        {
+            Debug.Log($"Système: {message}");
+        }
 
         // Afficher dans la bulle de dialogue du personnage
-        if (dialogueManager != null)
+        if (dialogueManager != null && person != null)
         {
             int characterIndex = gameManager.GetPersonIndex(person);
             if (characterIndex >= 0)
@@ -200,10 +236,17 @@ public class PlayerActions : MonoBehaviour
             }
         }
 
-        // Également afficher le message dans l'UI si disponible (pour compatibilité)
+        // Également afficher le message dans l'UI si disponible
         if (uiManager != null)
         {
-            uiManager.DisplayMessage($"{person.personName}: {message}");
+            if (person != null)
+            {
+                uiManager.DisplayMessage($"{person.personName}: {message}");
+            }
+            else
+            {
+                uiManager.DisplayMessage(message);
+            }
         }
     }
 }

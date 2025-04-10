@@ -17,10 +17,12 @@ public class EndingScreen : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(ShowAuditResult());
+        result = (int)PlayerPrefs.GetFloat("Score", 0f);
+        Debug.Log("Score reçu : " + result);
+        StartCoroutine(ShowAuditResult(result));
     }
 
-    IEnumerator ShowAuditResult()
+    IEnumerator ShowAuditResult(int result)
     {
         yield return StartCoroutine(FadeText("Le comité d'audit a soigneusement examiné votre rapport."));
         yield return new WaitForSeconds(2f);

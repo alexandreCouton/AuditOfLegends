@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9dc6e16fb843b40a8d2a3c9c15ee8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: TransiBefore
+  sceneName: TansiBefore
 --- !u!114 &1168574708
 MonoBehaviour:
   m_ObjectHideFlags: 0
