@@ -7,6 +7,9 @@
 </br>
 
 [![Voir le Wiki](https://img.shields.io/badge/Voir%20le%20Wiki-brown)](Wiki.md)
+&nbsp;&nbsp;&nbsp;
+[![Voir le Wiki](https://img.shields.io/badge/Voir%20le%20guide%20d'installation-brown)](Install.md)
+
 
 # ☛ Notre équipe
 
@@ -20,7 +23,7 @@ L’équipe 🔥**Vos Gros Darons**🔥, composée de :
 
 🔸 **Auguste DELAYE**
 
-Vous présente leur projet **T4**.
+Vous présente leur cahier des charges du projet **T4**.
 
 ---
 
@@ -40,7 +43,7 @@ Vous présente leur projet **T4**.
 &nbsp;&nbsp;&nbsp;
 [![Lien etudiant 7](https://img.shields.io/badge/Lien%20pour%20LE%20Thanh%20Long-orange)](EvaluationsPourLesA1/Evaluation-LE_Thanh_Long.md)
 
-
+> Si vous avez du mal ou ne savez simplement pas comment tester notre prototype, vous pouvez retrouver [notre guide d'installation et d'execution.](Install.md)
 
 # ☛ Présentation du projet
 
@@ -54,28 +57,8 @@ Ce projet a pour but de réaliser un **jeu sérieux** sur le métier **d'auditeu
 
 Un **jeu sérieux sur le métier d'auditeur en université** qui se focalise sur **la difficulté et les méthodes de récupération des informations auprès des audités**.
 
-> Inclure des screenshots du jeu / une vidéo de gameplay un peu en mode gif
+![Le GIF du jeu](Ressources/AuditOfLegendsPres.gif)
 
-</br>
-
-# ☛ Procédures d'installation et d'exécution
-
-Tutoriel d'installation du projet :
- - Ouvrez votre terminal bash et tapez la commande suivante :
-
-```bash
-git clone git@git.unistra.fr:MET25-T4-C/t4.git
-```
-
-> Si vous n'avez pas encore votre clé ssh, il se peut que vous ayez à renseigner votre identifiant et mot de passe unistra.
-
- ## ✤ Pour Windows
-
-
- ## ✤ Pour Linux
-
-
- 
 </br>
 
 # ☛ Objectifs pédagogiques
