@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chefProjet_PasConfiant_0: 2900819526799425308
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

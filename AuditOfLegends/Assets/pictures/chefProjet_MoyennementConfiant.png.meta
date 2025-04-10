@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chefProjet_MoyennementConfiant_0: -4882859808841279689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
