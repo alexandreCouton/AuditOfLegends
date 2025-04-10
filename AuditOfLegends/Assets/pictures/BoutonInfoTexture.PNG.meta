@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 78460de1999799940b569d482a78763b
+guid: 9db87f6c00e350b4aada410c186d709c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1586491775666386280
-    second: bulleDialogue_0
+      213: 2808061741749566771
+    second: BoutonInfoTexture_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bulleDialogue_0
+      name: BoutonInfoTexture_0
       rect:
         serializedVersion: 2
-        x: 153
-        y: 255
-        width: 757
-        height: 497
+        x: 63
+        y: 17
+        width: 902
+        height: 339
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89a8358b226abf9e0800000000000000
-      internalID: -1586491775666386280
+      spriteID: 33df850c64d38f620800000000000000
+      internalID: 2808061741749566771
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      bulleDialogue_0: -1586491775666386280
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
