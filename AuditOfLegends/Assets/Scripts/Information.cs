@@ -13,7 +13,8 @@ public class Information
         False
     }
 
-    [SerializeField] private string fullText; // Version information qu'on va mettre sur le bouton
+    [SerializeField] private string fullText; // Version courte de l'information pour les boutons
+    [SerializeField] private string longText; // Version longue de l'information pour les dialogues
     [SerializeField] private bool isTrue; // Si l'information est vraie ou fausse
     [SerializeField] private InformationState state; // État actuel de l'information
     [SerializeField] private bool clickable; // Si le joueur peut interagir avec cette information
@@ -22,15 +23,17 @@ public class Information
     public Information()
     {
         fullText = "";
+        longText = "";
         isTrue = false;
         state = InformationState.Empty;
         clickable = false;
     }
 
     // Constructeur avec paramètres
-    public Information(string fullText, bool isTrue)
+    public Information(string fullText, string longText, bool isTrue)
     {
         this.fullText = fullText;
+        this.longText = longText;
         this.isTrue = isTrue;
         this.state = InformationState.Unverified;
         this.clickable = true;
@@ -40,6 +43,12 @@ public class Information
     {
         get { return fullText; }
         set { fullText = value; }
+    }
+
+    public string LongText
+    {
+        get { return longText; }
+        set { longText = value; }
     }
 
     public bool IsTrue

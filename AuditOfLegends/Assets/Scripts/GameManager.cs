@@ -5,15 +5,22 @@ using System.Collections.Generic;
 public class GameManager : MonoBehaviour
 {
     public List<Person> people;
+    private PersonalityManager personalityManager;
 
     void Start()
     {
+        personalityManager = GetComponent<PersonalityManager>();
+        if (personalityManager == null)
+        {
+            personalityManager = gameObject.AddComponent<PersonalityManager>();
+        }
+
         people = new List<Person>
         {
-            new Person("Manager", 40f, 60f),
-            new Person("Chef de projet", 90f, 20f),
-            new Person("Emp random 1", 60f, 50f),
-            new Person("Emp random 2", 25f, 60f)
+            new Person("Zimmerwoman", 40f, 60f, PersonalityType.Boss),
+            new Person("CDP", 90f, 20f, PersonalityType.Reserved),
+            new Person("Jean", 60f, 50f, PersonalityType.Friendly),
+            new Person("Daenerys", 25f, 60f, PersonalityType.Shy)
         };
 
         PlayerActions playerActions = new PlayerActions(this);
@@ -26,8 +33,18 @@ public class GameManager : MonoBehaviour
         return null;
     }
 
+    public int GetPersonIndex(Person person)
+    {
+        return people.IndexOf(person);
+    }
+
     public List<Person> GetPeople()
     {
         return people;
+    }
+    
+    public string GetPersonalizedResponse(Person person, string responseType, string param = null)
+    {
+        return personalityManager.GetResponse(person.personality, person.getTrustLevel(), responseType, param);
     }
 }

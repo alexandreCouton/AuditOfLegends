@@ -4,13 +4,38 @@ using System.Linq;
 
 public class InformationManager : MonoBehaviour
 {
-    // Listes d'informations en dur
-    private List<string> trueInformations = new List<string> {
-        "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10"
-    };
-    
-    private List<string> falseInformations = new List<string> {
-        "f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10"
+    // Structure pour stocker les informations
+    [System.Serializable]
+    public struct InfoTextPair
+    {
+        public string shortText;  // Texte pour les boutons
+        public string longText;   // Texte détaillé pour les dialogues
+        public bool isTrue;       // Si l'information est vraie ou fausse
+    }
+
+    // Liste des informations disponibles
+    private List<InfoTextPair> availableInformations = new List<InfoTextPair>
+    {
+        new InfoTextPair { shortText = "Logiciels pas à jour", longText = "Personne ne met à jour les logiciels ici.", isTrue = false },
+        new InfoTextPair { shortText = "Réutilisation de mot de passe", longText = "On utilise le même mot de passe sur plusieurs services.", isTrue = false },
+        new InfoTextPair { shortText = "Journaux non surveillés", longText = "Les journaux système ne sont jamais vérifiés.", isTrue = false },
+        new InfoTextPair { shortText = "Clés USB non sécurisées", longText = "Certains fichiers sensibles sont stockés sur des clés USB non chiffrées.", isTrue = false },
+        new InfoTextPair { shortText = "Pas de plan d'urgence", longText = "Il n'y a pas de plan de réaction en cas d'attaque.", isTrue = false },
+        new InfoTextPair { shortText = "Comptes inactifs non désactivés", longText = "Les anciens comptes utilisateurs sont encore actifs.", isTrue = false },
+        new InfoTextPair { shortText = "Wi-Fi mal isolé", longText = "Le réseau Wi-Fi invité donne accès au réseau principal.", isTrue = false },
+        new InfoTextPair { shortText = "Phishing réussi", longText = "Un collègue a cliqué sur un lien de phishing récemment.", isTrue = false },
+        new InfoTextPair { shortText = "Documents non protégés", longText = "On envoie des documents confidentiels sans mot de passe.", isTrue = false },
+        new InfoTextPair { shortText = "Absence d'antivirus", longText = "Certains postes n'ont pas d'antivirus.", isTrue = false },
+        new InfoTextPair { shortText = "Authentification 2FA active", longText = "L'authentification à deux facteurs est activée sur tous les comptes.", isTrue = true },
+        new InfoTextPair { shortText = "Mots de passe sécurisés", longText = "Les mots de passe sont longs, complexes et changés tous les 90 jours.", isTrue = true },
+        new InfoTextPair { shortText = "Connexions sécurisées par VPN", longText = "On utilise un VPN pour toutes les connexions à distance.", isTrue = true },
+        new InfoTextPair { shortText = "Sauvegardes fiables", longText = "Les sauvegardes sont automatiques et stockées hors ligne.", isTrue = true },
+        new InfoTextPair { shortText = "Pare-feu actif et intelligent", longText = "Le pare-feu bloque automatiquement les connexions suspectes.", isTrue = true },
+        new InfoTextPair { shortText = "Formation cybersécurité régulière", longText = "Tous les employés reçoivent une formation cybersécurité annuelle.", isTrue = true },
+        new InfoTextPair { shortText = "Gestion des droits d'accès", longText = "L'accès aux données sensibles est limité selon les rôles.", isTrue = true },
+        new InfoTextPair { shortText = "Logiciels sûrs", longText = "On utilise uniquement des logiciels officiels et vérifiés.", isTrue = true },
+        new InfoTextPair { shortText = "Site web sécurisé", longText = "Le site web utilise HTTPS avec un certificat à jour.", isTrue = true },
+        new InfoTextPair { shortText = "Accès physique restreint", longText = "L'accès aux serveurs physiques est strictement contrôlé.", isTrue = true }
     };
     
     [SerializeField] private int numberOfButtons = 5;
@@ -18,25 +43,23 @@ public class InformationManager : MonoBehaviour
     private List<Information> activeInformations = new List<Information>();
     
     // Liste pour garder trace des informations déjà utilisées
-    private List<string> usedInformations = new List<string>();
+    private List<int> usedInformationIndices = new List<int>();
     
     public void InitializeInformations()
     {
         // Vider les listes
         activeInformations.Clear();
-        usedInformations.Clear();
+        usedInformationIndices.Clear();
+        
+        // Mélanger aléatoirement les informations disponibles
+        System.Random rng = new System.Random();
+        availableInformations = availableInformations.OrderBy(x => rng.Next()).ToList();
         
         // Créer des informations aléatoires pour chaque bouton
         for (int i = 0; i < numberOfButtons; i++)
         {
-            // Choisir aléatoirement si l'information est vraie ou fausse
-            bool isTrue = Random.value > 0.5f;
-            
-            // Récupérer le texte depuis la liste appropriée (sans répétition)
-            string text = GetUniqueRandomInformation(isTrue);
-            
             // Créer l'information (initialiser en état "Empty" et non cliquable)
-            Information info = new Information(text, isTrue);
+            Information info = new Information();
             info.SetEmpty();
             info.DisableClick();
             
@@ -45,42 +68,46 @@ public class InformationManager : MonoBehaviour
         }
     }
     
-    private string GetUniqueRandomInformation(bool isTrue)
+    // Récupérer une information aléatoire non utilisée
+    public InfoTextPair GetRandomUnusedInformation()
     {
-        List<string> sourceList = isTrue ? trueInformations : falseInformations;
-        
         // Filtrer pour n'avoir que les informations non utilisées
-        List<string> availableInfos = sourceList.Where(info => !usedInformations.Contains(info)).ToList();
+        List<int> availableIndices = Enumerable.Range(0, availableInformations.Count)
+            .Where(i => !usedInformationIndices.Contains(i))
+            .ToList();
         
-        // Si aucune information disponible dans la liste préférée, essayer l'autre liste
-        if (availableInfos.Count == 0)
+        // Si toutes les informations ont été utilisées, réinitialiser
+        if (availableIndices.Count == 0)
         {
-            isTrue = !isTrue;
-            sourceList = isTrue ? trueInformations : falseInformations;
-            availableInfos = sourceList.Where(info => !usedInformations.Contains(info)).ToList();
-            
-            // Si toujours aucune information disponible, réinitialiser les utilisations
-            if (availableInfos.Count == 0)
-            {
-                usedInformations.Clear();
-                availableInfos = sourceList;
-            }
+            usedInformationIndices.Clear();
+            availableIndices = Enumerable.Range(0, availableInformations.Count).ToList();
         }
         
-        // Récupérer une information aléatoire
-        int randomIndex = Random.Range(0, availableInfos.Count);
-        string selectedInfo = availableInfos[randomIndex];
+        // Récupérer un index aléatoire
+        int randomIndex = Random.Range(0, availableIndices.Count);
+        int selectedIndex = availableIndices[randomIndex];
         
         // Marquer comme utilisée
-        usedInformations.Add(selectedInfo);
+        usedInformationIndices.Add(selectedIndex);
         
-        return selectedInfo;
+        return availableInformations[selectedIndex];
     }
     
     // Récupérer la première information vide
     public Information GetFirstEmptyInformation()
     {
-        return activeInformations.FirstOrDefault(info => info.State == Information.InformationState.Empty);
+        Information emptyInfo = activeInformations.FirstOrDefault(info => info.State == Information.InformationState.Empty);
+        
+        if (emptyInfo != null)
+        {
+            // Remplir cette information avec un contenu aléatoire
+            InfoTextPair randomInfo = GetRandomUnusedInformation();
+            emptyInfo.FullText = randomInfo.shortText;
+            emptyInfo.LongText = randomInfo.longText;
+            emptyInfo.IsTrue = randomInfo.isTrue;
+        }
+        
+        return emptyInfo;
     }
     
     // Vérifier s'il y a des informations non vérifiées

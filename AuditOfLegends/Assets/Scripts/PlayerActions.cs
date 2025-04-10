@@ -7,6 +7,7 @@ public class PlayerActions : MonoBehaviour
     private GameManager gameManager;
     private InformationManager informationManager;
     private UIManager uiManager;
+    private DialogueManager dialogueManager;
 
     // État pour suivre si on est en mode "vérification d'information"
     private bool isCheckingTrustInfo = false;
@@ -17,6 +18,7 @@ public class PlayerActions : MonoBehaviour
         this.gameManager = gameManager;
         this.informationManager = Object.FindObjectOfType<InformationManager>();
         this.uiManager = Object.FindObjectOfType<UIManager>();
+        this.dialogueManager = Object.FindObjectOfType<DialogueManager>();
     }
 
     // Action pour augmenter la confiance
@@ -24,7 +26,10 @@ public class PlayerActions : MonoBehaviour
     {
         Person person = gameManager.GetPerson(personIndex);
         person.IncreaseTrust(10f);
-        DisplayMessage(person, "Trust increased by 10.");
+        
+        // Message personnalisé pour l'augmentation de confiance
+        string message = gameManager.GetPersonalizedResponse(person, "trustIncreased");
+        DisplayMessage(person, message);
     }
 
     // Action pour vérifier les connaissances
@@ -40,9 +45,10 @@ public class PlayerActions : MonoBehaviour
 
             if (emptyInfo != null)
             {
-                // Révéler une information
+                // Révéler une information avec un message personnalisé
                 emptyInfo.SetUnverified();
-                DisplayMessage(person, $"Je sais quelque chose: {emptyInfo.FullText}");
+                string message = gameManager.GetPersonalizedResponse(person, "knowledgeSuccess", emptyInfo.LongText);
+                DisplayMessage(person, message);
 
                 // Mettre à jour l'UI
                 uiManager.UpdateInformationButtons();
@@ -50,13 +56,15 @@ public class PlayerActions : MonoBehaviour
             else
             {
                 // Plus d'informations à révéler
-                DisplayMessage(person, "J'ai rien de plus à dire.");
+                string message = gameManager.GetPersonalizedResponse(person, "noMoreInfo");
+                DisplayMessage(person, message);
             }
         }
         else
         {
             // Le personnage ne sait pas
-            DisplayMessage(person, "Je ne sais pas.");
+            string message = gameManager.GetPersonalizedResponse(person, "knowledgeFailure");
+            DisplayMessage(person, message);
         }
     }
 
@@ -78,11 +86,13 @@ public class PlayerActions : MonoBehaviour
             // Mettre à jour l'interface
             uiManager.UpdateInformationButtons();
 
-            DisplayMessage(person, "Quelle information veux-tu vérifier?");
+            string message = gameManager.GetPersonalizedResponse(person, "trustRequest");
+            DisplayMessage(person, message);
         }
         else
         {
-            DisplayMessage(person, "Désolé, tu n'as pas d'informations à vérifier.");
+            string message = gameManager.GetPersonalizedResponse(person, "trustNoInfo");
+            DisplayMessage(person, message);
         }
     }
 
@@ -106,18 +116,21 @@ public class PlayerActions : MonoBehaviour
             if (info.IsTrue)
             {
                 info.SetVerified();
-                DisplayMessage(person, $"Oui, c'est vrai: {info.FullText}");
+                string message = gameManager.GetPersonalizedResponse(person, "truthConfirmation", info.LongText);
+                DisplayMessage(person, message);
             }
             else
             {
                 info.SetFalse();
-                DisplayMessage(person, $"Non, c'est faux: {info.FullText}");
+                string message = gameManager.GetPersonalizedResponse(person, "falseConfirmation", info.LongText);
+                DisplayMessage(person, message);
             }
         }
         else
         {
             // Le personnage ne fait pas confiance et ne confirme pas
-            DisplayMessage(person, "Désolé, je n'en sais pas plus à ce sujet.");
+            string message = gameManager.GetPersonalizedResponse(person, "noMoreInfo");
+            DisplayMessage(person, message);
         }
 
         // Désactiver le mode vérification
@@ -131,12 +144,26 @@ public class PlayerActions : MonoBehaviour
         uiManager.UpdateInformationButtons();
     }
 
-    // Méthode pour afficher un message dans les logs
+    // Méthode pour afficher un message
     private void DisplayMessage(Person person, string message)
     {
+        // Log dans la console pour le débogage
         Debug.Log($"{person.personName}: {message}");
 
-        // Également afficher le message dans l'UI si disponible
-        uiManager.DisplayMessage($"{person.personName}: {message}");
+        // Afficher dans la bulle de dialogue du personnage
+        if (dialogueManager != null)
+        {
+            int characterIndex = gameManager.GetPersonIndex(person);
+            if (characterIndex >= 0)
+            {
+                dialogueManager.DisplayDialogue(characterIndex, message, 4f);  // Afficher pendant 4 secondes
+            }
+        }
+
+        // Également afficher le message dans l'UI si disponible (pour compatibilité)
+        if (uiManager != null)
+        {
+            uiManager.DisplayMessage($"{person.personName}: {message}");
+        }
     }
 }
