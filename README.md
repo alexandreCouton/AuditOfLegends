@@ -262,3 +262,5 @@ Nous avons également pensé à d'autres ajouts qui pourraient vous intéresser 
   🔸 Pour permettre un apprentissage plus direct et plus progressif, le joueur pourrait recevoir un feedback après chaque étape majeur du processus de réalisation de l'audit
     
   🔸 Le joueur pourrait également être confronté à des situations stressantes où des employés refusent de collaborer ou sont particulièrement méfiants. Il devra gérer la situation émotionnellement et apprendre à naviguer dans des dialogues difficiles.
+
+  🔸 Ajouter une musique de fond et des bruitages sur l’interface utilisateur, par exemple un son lorsque le joueur survole un bouton ou effectue une action spécifique.
