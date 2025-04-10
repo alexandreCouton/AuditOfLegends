@@ -205,6 +205,34 @@ Des évaluations en temps réel permettent au joueur de voir l'impact de ses rec
    🔸 Un moyen de connaitre la confiance que lui accorde les audités (qu'il soit facilement visible ou non)
 
 
+## ✤ Notre scénario
+
+Afin de vous aider à plus facilement comprendre comment intégrer la plupart des fonctionnalités, nous vous proposons une version rédigée du déroulement du jeu dont nous avons réalisé le prototype.
+
+Il est important de retenir que nous nous sommes concentré sur **l'objectif pédagogique de la compréhension de la difficulté des échanges**.
+
+**Etape 1** :
+
+Le joueur vient de recevoir un mail de la direction qui lui indique qu’il faut qu’il commence un nouvel audit.
+Ce mail fait comprendre au joueur qu'il est directement relié a la direction de l'établissement.
+
+Un sujet d'audit est donné au joueur.
+
+Une fois le sujet accepté, le joueur est informé qu'en temps qu'auditeur, il va passer un peu près 2 mois à se renseigner sur le domaine de l'audit.
+Dans notre cass, nous avons transmis de manière brêve les points importants que le joueur doit connaître pour faire attention aux bonnes choses lors de ses interviews.
+
+**Etape 2** :
+
+Le joueur a la possibilité de rencontrer l'employé qu'il veut, quand il veut. Il a également la possibilité de rédiger un rapport lorsqu'il le souhaite.
+Lorsque le joueur rencontre un employé, il discute avec lui. Si l'employé connait des informations sur le sujet et qu'il est assez confiant avec l'auditeur, il peut lui donner des informations.
+Plus le niveau de confiance est élevé, plus l'employé souhaiterais donner des informations.
+Plus le niveau de connaissance est élevé, plus l'employé sera en capacité de donner des informations.
+
+Il y a différents profils d’employés qui sont plus ou moins collaboratif, le choix de l'ordre l'intéraction est important.
+
+**Etape 3** : 
+
+Lorsque le joueur le souhaite, il écrit le rapport, en fonction des informations qu’il a récupéré auprès des employés, et en fonction de la véracité des informations, le comité d'audit informera l'auditeur sur la satisfaction qu'ils ont vis à vis du rapport produit.
 
 </br>
 
