@@ -2,8 +2,11 @@
 
 <img src="Ressources/Audit_Of_Legends.png" alt="Chargement de l'image" style="display: block; margin: 0 auto;">
 
+
 </br>
 </br>
+
+[![Voir le Wiki](https://img.shields.io/badge/Voir%20le%20Wiki-brown)](Wiki.md)
 
 # ☛ Notre équipe
 
@@ -23,9 +26,13 @@ Vous présente leur projet **T4**.
 
 **Vos liens pour vos évaluations :** 
 
- - Prenom nom : Lien 1
- - Prenom nom : Lien 2
- - Prenom nom : Lien 3
+[![Lien etudiant 1](https://img.shields.io/badge/Lien%20pour%20nom%20prenom-orange)](Eval1.md)
+&nbsp;&nbsp;&nbsp;
+[![Lien etudiant 2](https://img.shields.io/badge/Lien%20pour%20nom%20prenom-orange)](Eval2.md)
+&nbsp;&nbsp;&nbsp;
+[![Lien etudiant 3](https://img.shields.io/badge/Lien%20pour%20nom%20prenom-orange)](Eval3.md)
+
+
 
 
 
