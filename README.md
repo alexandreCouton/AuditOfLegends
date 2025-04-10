@@ -26,19 +26,19 @@ Vous présente leur projet **T4**.
 
 **Vos liens pour vos évaluations :** 
 
-[![Lien etudiant 1](https://img.shields.io/badge/Lien%20pour%20LUTHIN%20Theo-orange)](EvaluationsPourLesA1/Evaluation-T4_LUTHIN_Theo.md)
+[![Lien etudiant 1](https://img.shields.io/badge/Lien%20pour%20BAHLOUL%20Mehdi-orange)](EvaluationsPourLesA1/Evaluation-BAHLOUL_Mehdi.md)
 &nbsp;&nbsp;&nbsp;
-[![Lien etudiant 2](https://img.shields.io/badge/Lien%20pour%20MOULIN%20Luka-orange)](EvaluationsPourLesA1/Evaluation-T4_MOULIN_Luka.md)
+[![Lien etudiant 2](https://img.shields.io/badge/Lien%20pour%20BEBEY%20BENA%20Jason%20Scott-orange)](EvaluationsPourLesA1/Evaluation-BEBEY_BENA_Jason-Scott.md)
 &nbsp;&nbsp;&nbsp;
-[![Lien etudiant 3](https://img.shields.io/badge/Lien%20pour%20OUSSAID%20Camil-orange)](EvaluationsPourLesA1/Evaluation-T4_OUSSAID_Camil.md)
+[![Lien etudiant 3](https://img.shields.io/badge/Lien%20pour%20DAUSSE%20Capucine-orange)](EvaluationsPourLesA1/Evaluation-DAUSSE_Capucine.md)
 &nbsp;&nbsp;&nbsp;
-[![Lien etudiant 4](https://img.shields.io/badge/Lien%20pour%20SCHMITT%20Nathan-orange)](EvaluationsPourLesA1/Evaluation-T4_SCHMITT_Nathan.md)
+[![Lien etudiant 4](https://img.shields.io/badge/Lien%20pour%20DOVYBYSCH%20Oleksii-orange)](EvaluationsPourLesA1/Evaluation-DOVYBYSCH_Oleksii.md)
 &nbsp;&nbsp;&nbsp;
-[![Lien etudiant 5](https://img.shields.io/badge/Lien%20pour%20SHIR%20Victor-orange)](EvaluationsPourLesA1/Evaluation-T4_SIHR_Victor.md)
+[![Lien etudiant 5](https://img.shields.io/badge/Lien%20pour%20FOUILLEUL%20Elora-orange)](EvaluationsPourLesA1/Evaluation-FOUILLEUL_Elora.md)
 &nbsp;&nbsp;&nbsp;
-[![Lien etudiant 6](https://img.shields.io/badge/Lien%20pour%20VLAICU%20Alexandru-orange)](EvaluationsPourLesA1/Evaluation-T4_VLAICU_Alexandru.md)
+[![Lien etudiant 6](https://img.shields.io/badge/Lien%20pour%20GOMES%20Abel-orange)](EvaluationsPourLesA1/Evaluation-GOMES_Abel.md)
 &nbsp;&nbsp;&nbsp;
-[![Lien etudiant 7](https://img.shields.io/badge/Lien%20pour%20WECHSELGAERTNER%20Sarah-orange)](EvaluationsPourLesA1/Evaluation-T4_WECHSELGAERTNER_Sarah.md)
+[![Lien etudiant 7](https://img.shields.io/badge/Lien%20pour%20LE%20Thanh%20Long-orange)](EvaluationsPourLesA1/Evaluation-LE_Thanh_Long.md)
 
 
 
@@ -73,6 +73,9 @@ git clone git@git.unistra.fr:MET25-T4-C/t4.git
 
 
  ## ✤ Pour Linux
+
+
+ 
 </br>
 
 # ☛ Objectifs pédagogiques
