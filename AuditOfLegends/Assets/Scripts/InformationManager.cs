@@ -66,11 +66,16 @@ public class InformationManager : MonoBehaviour
         activeInformations.Clear();
         usedInformationIndices.Clear();
         
-        // Mélanger aléatoirement les informations disponibles
-        System.Random rng = new System.Random();
-        availableInformations = availableInformations.OrderBy(x => rng.Next()).ToList();
+        // Préparer deux listes séparées pour les infos vraies et fausses
+        List<InfoTextPair> trueInformations = availableInformations.Where(info => info.isTrue).ToList();
+        List<InfoTextPair> falseInformations = availableInformations.Where(info => !info.isTrue).ToList();
         
-        // Créer des informations aléatoires pour chaque bouton
+        // Mélanger aléatoirement les deux listes
+        System.Random rng = new System.Random();
+        trueInformations = trueInformations.OrderBy(x => rng.Next()).ToList();
+        falseInformations = falseInformations.OrderBy(x => rng.Next()).ToList();
+        
+        // Créer des informations pour chaque bouton
         for (int i = 0; i < numberOfButtons; i++)
         {
             // Créer l'information (initialiser en état "Empty" et non cliquable)
@@ -81,28 +86,85 @@ public class InformationManager : MonoBehaviour
             // Ajout à la liste active
             activeInformations.Add(info);
         }
+        
+        // Garder trace des vrais éléments et faux éléments pour garantir au moins 4 vrais
+        usedTrueCount = 0;
+        usedFalseCount = 0;
     }
-    
-    // Récupérer une information aléatoire non utilisée
+
+    // Modifier la méthode GetRandomUnusedInformation pour garantir au moins 4 infos vraies
+    private int usedTrueCount = 0;
+    private int usedFalseCount = 0;
+    private const int MinTrueInformations = 4;
+
     public InfoTextPair GetRandomUnusedInformation()
     {
-        // Filtrer pour n'avoir que les informations non utilisées
-        List<int> availableIndices = Enumerable.Range(0, availableInformations.Count)
-            .Where(i => !usedInformationIndices.Contains(i))
+        // Séparer les infos disponibles entre vraies et fausses
+        List<int> availableTrueIndices = Enumerable.Range(0, availableInformations.Count)
+            .Where(i => !usedInformationIndices.Contains(i) && availableInformations[i].isTrue)
             .ToList();
         
-        // Si toutes les informations ont été utilisées, réinitialiser
-        if (availableIndices.Count == 0)
+        List<int> availableFalseIndices = Enumerable.Range(0, availableInformations.Count)
+            .Where(i => !usedInformationIndices.Contains(i) && !availableInformations[i].isTrue)
+            .ToList();
+        
+        // Si on a utilisé toutes les infos, réinitialiser
+        if (availableTrueIndices.Count == 0 && availableFalseIndices.Count == 0)
         {
             usedInformationIndices.Clear();
-            availableIndices = Enumerable.Range(0, availableInformations.Count).ToList();
+            usedTrueCount = 0;
+            usedFalseCount = 0;
+            
+            availableTrueIndices = Enumerable.Range(0, availableInformations.Count)
+                .Where(i => availableInformations[i].isTrue)
+                .ToList();
+            
+            availableFalseIndices = Enumerable.Range(0, availableInformations.Count)
+                .Where(i => !availableInformations[i].isTrue)
+                .ToList();
         }
         
-        // Récupérer un index aléatoire
-        int randomIndex = Random.Range(0, availableIndices.Count);
-        int selectedIndex = availableIndices[randomIndex];
+        int selectedIndex;
         
-        // Marquer comme utilisée
+        // Logique pour garantir au moins MinTrueInformations infos vraies
+        int remainingSlots = numberOfButtons - (usedTrueCount + usedFalseCount);
+        int requiredTrueInfos = MinTrueInformations - usedTrueCount;
+        
+        if (requiredTrueInfos > 0 && remainingSlots <= requiredTrueInfos && availableTrueIndices.Count > 0)
+        {
+            // Forcer une info vraie car on doit atteindre le minimum et il reste peu de slots
+            int randomIndex = Random.Range(0, availableTrueIndices.Count);
+            selectedIndex = availableTrueIndices[randomIndex];
+            usedTrueCount++;
+        }
+        else if (usedTrueCount < MinTrueInformations && availableTrueIndices.Count > 0 && Random.Range(0, 2) == 0)
+        {
+            // Favoriser les infos vraies jusqu'à atteindre le minimum
+            int randomIndex = Random.Range(0, availableTrueIndices.Count);
+            selectedIndex = availableTrueIndices[randomIndex];
+            usedTrueCount++;
+        }
+        else if (availableFalseIndices.Count > 0)
+        {
+            // Choisir une info fausse
+            int randomIndex = Random.Range(0, availableFalseIndices.Count);
+            selectedIndex = availableFalseIndices[randomIndex];
+            usedFalseCount++;
+        }
+        else if (availableTrueIndices.Count > 0)
+        {
+            // S'il ne reste que des infos vraies, prendre une vraie
+            int randomIndex = Random.Range(0, availableTrueIndices.Count);
+            selectedIndex = availableTrueIndices[randomIndex];
+            usedTrueCount++;
+        }
+        else
+        {
+            // Cas improbable mais pour la sécurité
+            selectedIndex = 0;
+        }
+        
+        // Marquer l'index comme utilisée
         usedInformationIndices.Add(selectedIndex);
         
         return availableInformations[selectedIndex];
