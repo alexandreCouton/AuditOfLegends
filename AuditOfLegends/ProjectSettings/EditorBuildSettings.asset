@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TransiAfter.unity
     guid: 20f9b9277a3fc10448cb55546356a93b
+  - enabled: 1
+    path: Assets/Scenes/DebutJeu.unity
+    guid: b52a481b1329ae44db7973546c4577aa
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
