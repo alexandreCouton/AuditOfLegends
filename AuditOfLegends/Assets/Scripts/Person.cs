@@ -7,7 +7,7 @@ public class Person
 
     public float trustPercentage;
     public float knowledgePercentage;
-    
+
 
     public Person(string name, float knowledgePercentage, float trustPercentage)
     {
@@ -19,5 +19,14 @@ public class Person
     public void IncreaseTrust(float increase)
     {
         trustPercentage = Mathf.Clamp(trustPercentage + increase, 0f, 100f);
+    }
+
+    public float getTrustPercentage()
+    {
+        return trustPercentage;
+    }
+    public float getKnowledgePercentage()
+    {
+        return knowledgePercentage;
     }
 }
