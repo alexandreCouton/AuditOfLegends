@@ -21,6 +21,17 @@ public class Person
         trustPercentage = Mathf.Clamp(trustPercentage + increase, 0f, 100f);
     }
 
+    public bool DecreaseTrust(float decrease)
+    {
+        float oldTrustPercentage = trustPercentage;
+        TrustLevel oldLevel = getTrustLevel();
+        
+        trustPercentage = Mathf.Clamp(trustPercentage - decrease, 0f, 100f);
+        
+        // Renvoie vrai si le niveau de confiance a changé
+        return oldLevel != getTrustLevel();
+    }
+
     public float getTrustPercentage()
     {
         return trustPercentage;

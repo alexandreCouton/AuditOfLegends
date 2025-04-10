@@ -27,6 +27,7 @@ public class PersonalityManager : MonoBehaviour
     {
         public string greeting;                   // Message d'accueil
         public string trustIncreased;             // Réaction à l'augmentation de la confiance
+        public string trustDecreased;             // Réaction à la diminution de confiance
         public string knowledgeSuccess;           // A une information à partager
         public string knowledgeFailure;           // N'a pas d'information
         public string trustRequest;               // Demande quelle information vérifier
@@ -57,6 +58,7 @@ public class PersonalityManager : MonoBehaviour
         {
             greeting = "Que voulez-vous ? Soyez bref.",
             trustIncreased = "Mmh... Je commence à vous apprécier.",
+            trustDecreased = "Vous commencez à m'agacer avec vos questions.",
             knowledgeSuccess = "Voici une information importante : {0}",
             knowledgeFailure = "Je n'ai rien à vous dire pour le moment.",
             trustRequest = "Quelle information voulez-vous vérifier exactement ?",
@@ -71,6 +73,7 @@ public class PersonalityManager : MonoBehaviour
         {
             greeting = "Que puis-je faire pour vous ?",
             trustIncreased = "Je vois que nous pouvons collaborer efficacement.",
+            trustDecreased = "J'ai du travail, vous savez.",
             knowledgeSuccess = "Voici ce que je sais : {0}",
             knowledgeFailure = "Je n'ai pas cette information pour l'instant.",
             trustRequest = "Quelle information souhaitez-vous vérifier ?",
@@ -85,6 +88,7 @@ public class PersonalityManager : MonoBehaviour
         {
             greeting = "Ah, vous voilà ! Comment puis-je vous aider ?",
             trustIncreased = "Je savais que je pouvais compter sur vous.",
+            trustDecreased = "Est-ce vraiment nécessaire de me poser tant de questions ?",
             knowledgeSuccess = "Entre nous, voici ce que je sais : {0}",
             knowledgeFailure = "Désolée, même moi je ne sais pas tout.",
             trustRequest = "Je vous écoute, quelle information voulez-vous vérifier ?",
@@ -102,6 +106,7 @@ public class PersonalityManager : MonoBehaviour
         {
             greeting = "...",
             trustIncreased = "Hmm.",
+            trustDecreased = "...",
             knowledgeSuccess = "Information : {0}",
             knowledgeFailure = "Rien à signaler.",
             trustRequest = "Quelle information ?",
@@ -116,6 +121,7 @@ public class PersonalityManager : MonoBehaviour
         {
             greeting = "Que voulez-vous ?",
             trustIncreased = "Acceptable.",
+            trustDecreased = "Je dois retourner travailler.",
             knowledgeSuccess = "Je dispose de cette information : {0}",
             knowledgeFailure = "Je n'ai pas cette donnée.",
             trustRequest = "Quelle information souhaitez-vous vérifier ?",
@@ -130,6 +136,7 @@ public class PersonalityManager : MonoBehaviour
         {
             greeting = "Bonjour, que puis-je faire pour vous ?",
             trustIncreased = "Je vous remercie de votre collaboration.",
+            trustDecreased = "J'ai des dossiers qui m'attendent.",
             knowledgeSuccess = "Voici l'information demandée : {0}",
             knowledgeFailure = "Je ne dispose pas de cette information actuellement.",
             trustRequest = "Veuillez préciser l'information à vérifier.",
@@ -147,6 +154,7 @@ public class PersonalityManager : MonoBehaviour
         {
             greeting = "Salut, tu veux quoi ?",
             trustIncreased = "Cool, merci !",
+            trustDecreased = "Hey, c'est un interrogatoire ?",
             knowledgeSuccess = "Je crois savoir un truc : {0}",
             knowledgeFailure = "Désolé, je ne sais pas.",
             trustRequest = "Qu'est-ce que tu veux vérifier ?",
@@ -161,6 +169,7 @@ public class PersonalityManager : MonoBehaviour
         {
             greeting = "Hey ! Comment je peux t'aider ?",
             trustIncreased = "Sympa de bosser ensemble !",
+            trustDecreased = "Tant de questions... Je devrais retourner bosser.",
             knowledgeSuccess = "Tiens, je sais que : {0}",
             knowledgeFailure = "Désolé, j'ai rien pour toi sur ça.",
             trustRequest = "Quelle info tu veux vérifier ?",
@@ -175,6 +184,7 @@ public class PersonalityManager : MonoBehaviour
         {
             greeting = "Salut mon pote ! Qu'est-ce que je peux faire pour toi ?",
             trustIncreased = "T'es vraiment cool comme mec !",
+            trustDecreased = "Mec, tu me poses beaucoup de questions aujourd'hui !",
             knowledgeSuccess = "Entre nous, voilà ce que je sais : {0}",
             knowledgeFailure = "Désolé mon ami, j'ai rien sur ça.",
             trustRequest = "Dis-moi, qu'est-ce que tu veux que je vérifie ?",
@@ -192,6 +202,7 @@ public class PersonalityManager : MonoBehaviour
         {
             greeting = "Euh... bonjour ?",
             trustIncreased = "Merci...",
+            trustDecreased = "Je... dois y aller...",
             knowledgeSuccess = "Je crois que... {0}",
             knowledgeFailure = "Je... je ne sais pas, désolée.",
             trustRequest = "Quelle... quelle information voulez-vous vérifier ?",
@@ -206,8 +217,9 @@ public class PersonalityManager : MonoBehaviour
         {
             greeting = "Bonjour, je peux vous aider ?",
             trustIncreased = "Merci beaucoup !",
+            trustDecreased = "Je suis un peu mal à l'aise avec toutes ces questions...",
             knowledgeSuccess = "Je sais que... {0}",
-            knowledgeFailure = "Je n'ai pas cette information, désolée.",
+            knowledgeFailure = "Je n'ai pas d'information, désolée.",
             trustRequest = "Quelle information souhaitez-vous vérifier ?",
             trustNoInfo = "Vous n'avez pas d'information à vérifier pour le moment.",
             truthConfirmation = "Oui, c'est bien vrai : {0}",
@@ -220,8 +232,9 @@ public class PersonalityManager : MonoBehaviour
         {
             greeting = "Bonjour ! Comment puis-je vous aider aujourd'hui ?",
             trustIncreased = "C'est vraiment gentil, merci !",
+            trustDecreased = "Désolée, mais j'ai vraiment du travail qui m'attend...",
             knowledgeSuccess = "Je peux vous dire que : {0}",
-            knowledgeFailure = "Je suis désolée, mais je n'ai pas cette information.",
+            knowledgeFailure = "Je suis désolée, mais je n'ai pas d'information.",
             trustRequest = "Quelle information souhaitez-vous que je vérifie pour vous ?",
             trustNoInfo = "Vous n'avez pas encore d'information à vérifier.",
             truthConfirmation = "Oui, c'est tout à fait exact : {0}",
@@ -263,6 +276,9 @@ public class PersonalityManager : MonoBehaviour
                 case "trustIncreased":
                     response = responses.trustIncreased;
                     break;
+                case "trustDecreased":
+                    response = responses.trustDecreased;
+                    break;    
                 case "knowledgeSuccess":
                     response = responses.knowledgeSuccess;
                     break;
