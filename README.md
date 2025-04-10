@@ -33,7 +33,7 @@ Vous présente leur projet **T4**.
 
 Ce projet a pour but de réaliser un **jeu serieux** sur le métier **d'audit dans une université** afin d'aider des débutants dans ce domaine pour leurs donner **un avant goût de la réalisation de leur premier audit**.
  
-⚠️ **Attention** ⚠️ Il peut être intéressant pour vous de **bien comprendre le thême**. C'est pourquoi nous vous invitons à vous renseigner en lisant [**notre wiki**](wiki.md).
+⚠️ **Attention** ⚠️ Il peut être intéressant pour vous de **bien comprendre le thême**. C'est pourquoi nous vous invitons à vous renseigner en lisant [**notre wiki**](Wiki.md).
 
 </br>
 
@@ -82,7 +82,7 @@ Nous vous proposons 3 objectifs pédagogiques différents, à vous de choisir le
 
 ### Compréhension du processus de réalisation de l'audit
 
-Il est important pour le joueur de comprendre quelles sont **les différentes étapes d'un audit**. Pour rappel, ces différentes informations sont dans [le wiki](wiki.md). Il est donc aussi important de bien faire comprendre au joueur **combien de temps est passé par section du processus** de réalisation d'un audit. Cet objectif ne se focus donc **pas sur une partie** du processus mais bien **sur son ensemble**.
+Il est important pour le joueur de comprendre quelles sont **les différentes étapes d'un audit**. Pour rappel, ces différentes informations sont dans [le wiki](Wiki.md). Il est donc aussi important de bien faire comprendre au joueur **combien de temps est passé par section du processus** de réalisation d'un audit. Cet objectif ne se focus donc **pas sur une partie** du processus mais bien **sur son ensemble**.
 
 </br>
 
@@ -158,7 +158,7 @@ Afin de réaliser cet objectif, il n'est donc pas nécessaire d'inclure toutes l
 Au niveau de la contrainte de développement, le client vous laisse libre par rapport à la technologie utilisée, et sur quels point vous voulez appuyer votre jeu. 
 
 En revanche, il est intéressant de garder en tête que le client souhaite ce jeu dans le but de donner une première approche à des débutants dans le domaine.
-Il faut donc penser à ne pas faire un jeu trop simplifié. C'est la raison pour laquelle nous avons détaillé au mieux le métier de auditeur dans [le wiki](wiki.md).
+Il faut donc penser à ne pas faire un jeu trop simplifié. C'est la raison pour laquelle nous avons détaillé au mieux le métier de auditeur dans [le wiki](Wiki.md).
 
 Une seule contrainte qui peut être intéressante à en déduire, est qu'il peut être plus favorable de créer des scénarios générés aléatoirement, afin de permettre aux joueurs de pouvoir réaliser plusieurs audits sur un même thême dans le but de les aider a mieux comprendre, plutôt que de les faire retenir quels choix sont les meilleurs dans un scénario donné. 
 
