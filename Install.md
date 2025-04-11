@@ -35,5 +35,6 @@ Allez dans le dossier build et executez le ficher AuditOfLegends.exe.
 Exécutez les commandes suivantes après avoir ouvert un terminal dans le dossier build:
 
 ```bash
-./LINUX/AuditOfLegends.x86_64
+chmod u+x ./Linux/AuditOfLegends.x86_64 
+./Linux/AuditOfLegends.x86_64
 ```
