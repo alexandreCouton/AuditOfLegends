@@ -10,7 +10,7 @@
 &nbsp;&nbsp;&nbsp;
 [![Voir le guide d'installation](https://img.shields.io/badge/Voir%20le%20guide%20d'installation-brown)](Install.md)
 &nbsp;&nbsp;&nbsp;
-[![Voir les fichiers d'installation](https://img.shields.io/badge/Voir%20les%20fichiers%20d'installation-brown)](https://seafile.unistra.fr/d/9b51570cb90144818da7/)
+[![Voir les fichiers d'installation](https://img.shields.io/badge/Voir%20les%20fichiers%20d'installation-brown)](Builds/)
 
 
 # ☛ Notre équipe
