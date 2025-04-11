@@ -26,13 +26,11 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 # Propositions d'amélioration du cahier des charges
 
-- Proposition 1
-- Proposition 2
+- Je renommerais le dossier Builds ou j’en créerais un nouveau intitulé Install_Game, contenant les fichiers pour différents systèmes d’exploitation. Ce serait plus intuitif pour les utilisateurs non techniques.
 
 # Propositions d'amélioration du jeu
 
-- Proposition 1
-- Proposition 2
+- Adapter le jeu pour macOS et les processeurs ARM, et créer une documentation d’installation correspondante.
 
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
@@ -89,19 +87,24 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 ## GIT 
 - Organisation
-  - [ ] Les fichiers sources suivent une organisation et des règles de nommage clairement établie.
+  - [x] Les fichiers sources suivent une organisation et des règles de nommage clairement établie.
   - [ ] Les fichiers sources sont tous partagés et organisés.
-  - [x] Certains fichiers sources ne sont pas partagés ou leur organisation laisse à désirer.
+  - [ ] Certains fichiers sources ne sont pas partagés ou leur organisation laisse à désirer.
 - Versioning
-  - [ ] La granularité des commits est pertinente et les commits sont clairement et systématique renseignés.
+  - [x] La granularité des commits est pertinente et les commits sont clairement et systématique renseignés.
   - [ ] La granularité des commits n'est pas pertinente ou les commits ne sont pas clairement et systématiquement renseignés.
-  - [x] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
+  - [ ] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
 - Droits d'accès
   - [ ] Julien Gossa est owner du dépôt GIT et ce dépôt est accessible à tous.
-  - [ ] Julien Gossa est owner du dépôt GIT.
-  - [x] Julien Gossa n'est pas owner du dépôt GIT.
+  - [x] Julien Gossa est owner du dépôt GIT.
+  - [ ] Julien Gossa n'est pas owner du dépôt GIT.
 
 Justifications :
+- Tous les fichiers principaux se trouvent sur la page principale du dépôt et portent des noms explicites.
+
+- Les commits sony faits de manière concise et claire.
+
+- Julien Gossa est propriétaire du dépôt, qui a le statut Interne, c'est-à-dire que le projet est accessibble à tout utilisateurs connecté, à l'exception des utilisateurs externs.
 
 ## Prototype
 - Installation
@@ -117,30 +120,31 @@ Justifications :
   - [ ] Le prototype est rarement instable
   - [x] Le prototype est instable
 - Affordabilité
-  - [ ] Toutes les instructions de jeu sont incluses dans le prototype au cours d'une partie normale.
+  - [x] Toutes les instructions de jeu sont incluses dans le prototype au cours d'une partie normale.
   - [ ] Les instructions de jeu sont sous forme d'un manuel ou d'un tutoriel à part.
-  - [x] Les instructions de jeu ne sont pas données.
+  - [ ] Les instructions de jeu ne sont pas données.
 - Transmission du concept
   - [ ] J'ai appris quelque chose en jouant.
-  - [ ] J'ai eu de l'intérêt en jouant, mais sans rien apprendre.
-  - [x] Je n'ai pas eu d'intérêt en jouant.
+  - [x] J'ai eu de l'intérêt en jouant, mais sans rien apprendre.
+  - [ ] Je n'ai pas eu d'intérêt en jouant.
 
 Résumer en une phrase ce que vous avez éventuellement appris :
 
 Autres justifications :
+- Je n’ai pas pu installer le jeu, car il n’existe pas d’installateur pour macOS et aucune adaptation pour les processeurs ARM. À cause de cela, je ne peux malheureusement pas évaluer la catégorie Prototype. Mais j’ai regardé les autres jouer et j’ai un peu joué moi-même sur un autre ordinateur, mais sans vraiment réfléchir à ce que je faisais.
 
 ## Présentation README.md
 
 - Présentation du projet
   - [ ] Cette partie est informative et succincte (1 phrase).
-  - [ ] Cette partie est informative.
+  - [x] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Captures d'écran
-  - [ ] Plusieurs captures d'écran soignées sont données.
+  - [x] Plusieurs captures d'écran soignées sont données.
   - [ ] Une capture d'écran est donnée.
   - [ ] Aucune capture d'écran n'est donnée.
 - Procédures d'installation et d'exécution
-  - [ ] Cette partie est informative et succincte (1 phrase).
+  - [x] Cette partie est informative et succincte (1 phrase).
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 
@@ -150,44 +154,44 @@ Pour un exemple de ce qui est attenu, voir https://gitlab.unistra.fr/T234/t4-exe
 
 - Objectifs pédagogiques
   - [ ] Cette partie est informative et correspond au style de l'exemple.
-  - [ ] Cette partie est informative.
+  - [x] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Objectifs pédagogiques avancés 
   - [ ] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Références
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Description des fonctionnalités (hors interface et actions)
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Interface
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Actions du joueur
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Scénarios
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Contraintes de développement
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Fonctionnalités et scénarios avancés
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 
 
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 
-- Total d'item « Satisfaisant » (1 point) : 
-- Total d'item « Insatisfaisant » (0 point) :
-- total des points (sur 50) :
+- Total d'item « Excellent » (2 point) : 12
+- Total d'item « Satisfaisant » (1 point) : 4
+- Total d'item « Insatisfaisant » (0 point) : 3 (Prototype)
+- total des points (sur 50) : 28
