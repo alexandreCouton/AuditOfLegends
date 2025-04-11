@@ -1,4 +1,4 @@
-[![Voir les fichiers d'installation](https://img.shields.io/badge/Voir%20les%20fichiers%20d'installation-brown)](https://seafile.unistra.fr/d/9b51570cb90144818da7/)
+[![Voir les fichiers d'installation](https://img.shields.io/badge/Voir%20les%20fichiers%20d'installation-brown)](Builds/)
 
 # ☛ Procédures d'installation et d'exécution
 
@@ -18,16 +18,22 @@ Après cet étape, vous aurez le projet en local.
 
 # ☛ Guide d'exécution du projet 
 
-Ouvrez votre dossier qui contient le projet, ouvrez le dossier build.  
+Ouvrez votre dossier qui contient le projet.  
 
  ## ✤ Pour Windows
 
-Cliquez sur l'installateur windows et suivez les étapes.
+Soit vous :
+
+Cliquez sur l'installateur windows qui se trouve dans installateur et suivez les étapes.
+
+Ou
+
+Allez dans le dossier build et executez le ficher AuditOfLegends.exe.
 
  ## ✤ Pour Linux
 
 Exécutez les commandes suivantes après avoir ouvert un terminal dans le dossier build:
 
 ```bash
-./BuildLinux/AuditOfLegends.
+./LINUX/AuditOfLegends.x86_64
 ```
