@@ -31,11 +31,22 @@ Définir ce qu'est concrétement un audit et un auditeur : la définition n'est 
 
 - Proposition 2
 
-
 # Propositions d'amélioration du jeu
 
 - Proposition 1
+Donner une jauge de confiance avec les employés. Il serait plus facile de juger leur niveau de confiance, les caractères des employés étant tous différents et leur jauge de confiance au départ également. Ainsi, il serait plus facile pour le joueur de comprendre comment poser les questions et définir quelle stratégie adopter avec les personnes interrogés dès les premières parties.
+
 - Proposition 2
+Au fur et à mesure des questions, donner une liste des éléments de caractère découverts de l'employé. Ainsi, il serait plus facile de déterminer comment aborder les dits employés. 
+
+- Proposition 3
+Donner le titre de chaque employé afin de savoir à qui on parle (seul le manager a son titre). En effet, selon les informations recueillies auprès des A2, les informations et les stratégies sont différentes en fonction des postes des personnes interrogées. 
+
+- Proposition 4
+Définir une légende et un titre pour les informations recueillies : sans explications de la part du groupe, il peut être difficile à comprendre. 
+
+- Proposition 5
+Rajout d'une partie explicative sur le but et les actions requises du joueur avant le début lors du texte écrit, afin de bien définir le but et les objectifs du jeu pour que mêmes des débutants dans le métier puisse comprendre. 
 
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
@@ -96,54 +107,54 @@ Définir ce qu'est concrétement un audit et un auditeur : la définition n'est 
   - [ ] Les fichiers sources sont tous partagés et organisés.
   - [x] Certains fichiers sources ne sont pas partagés ou leur organisation laisse à désirer.
 - Versioning
-  - [ ] La granularité des commits est pertinente et les commits sont clairement et systématique renseignés.
+  - [x] La granularité des commits est pertinente et les commits sont clairement et systématique renseignés.
   - [ ] La granularité des commits n'est pas pertinente ou les commits ne sont pas clairement et systématiquement renseignés.
-  - [x] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
+  - [ ] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
 - Droits d'accès
-  - [ ] Julien Gossa est owner du dépôt GIT et ce dépôt est accessible à tous.
+  - [x] Julien Gossa est owner du dépôt GIT et ce dépôt est accessible à tous.
   - [ ] Julien Gossa est owner du dépôt GIT.
-  - [x] Julien Gossa n'est pas owner du dépôt GIT.
+  - [ ] Julien Gossa n'est pas owner du dépôt GIT.
 
 Justifications :
 
 ## Prototype
 - Installation
   - [ ] Le prototype s'installe sans effort.
-  - [ ] Le prototype s'installe en suivant une procédure.
-  - [x] Le prototype ne s'installe pas.
+  - [x] Le prototype s'installe en suivant une procédure.
+  - [ ] Le prototype ne s'installe pas.
 - Exécution
   - [ ] Le prototype s'exécute en cliquant sur une icône.
-  - [ ] Le prototype s'exécute en suivant une procédure.
-  - [x] Le prototype ne s'exécute pas
+  - [x] Le prototype s'exécute en suivant une procédure.
+  - [ ] Le prototype ne s'exécute pas
 - Stabilité
-  - [ ] Le prototype est parfaitement stable
+  - [x] Le prototype est parfaitement stable
   - [ ] Le prototype est rarement instable
-  - [x] Le prototype est instable
+  - [ ] Le prototype est instable
 - Affordabilité
   - [ ] Toutes les instructions de jeu sont incluses dans le prototype au cours d'une partie normale.
-  - [ ] Les instructions de jeu sont sous forme d'un manuel ou d'un tutoriel à part.
-  - [x] Les instructions de jeu ne sont pas données.
+  - [x] Les instructions de jeu sont sous forme d'un manuel ou d'un tutoriel à part.
+  - [ ] Les instructions de jeu ne sont pas données.
 - Transmission du concept
   - [ ] J'ai appris quelque chose en jouant.
-  - [ ] J'ai eu de l'intérêt en jouant, mais sans rien apprendre.
-  - [x] Je n'ai pas eu d'intérêt en jouant.
+  - [x] J'ai eu de l'intérêt en jouant, mais sans rien apprendre.
+  - [ ] Je n'ai pas eu d'intérêt en jouant.
 
-Résumer en une phrase ce que vous avez éventuellement appris :
+Résumer en une phrase ce que vous avez éventuellement appris : Ce qu'est un audit et la façon dont se déroule la procédure de réalisation d'un audit. 
 
-Autres justifications :
+Autres justifications : /
 
 ## Présentation README.md
 
 - Présentation du projet
-  - [ ] Cette partie est informative et succincte (1 phrase).
+  - [x] Cette partie est informative et succincte (1 phrase).
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Captures d'écran
-  - [ ] Plusieurs captures d'écran soignées sont données.
+  - [x] Plusieurs captures d'écran soignées sont données.
   - [ ] Une capture d'écran est donnée.
   - [ ] Aucune capture d'écran n'est donnée.
 - Procédures d'installation et d'exécution
-  - [ ] Cette partie est informative et succincte (1 phrase).
+  - [x] Cette partie est informative et succincte (1 phrase).
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 
@@ -152,45 +163,45 @@ Autres justifications :
 Pour un exemple de ce qui est attenu, voir https://gitlab.unistra.fr/T234/t4-exemple
 
 - Objectifs pédagogiques
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Objectifs pédagogiques avancés 
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Références
   - [ ] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
-  - [ ] Cette partie n'est pas informative.
+  - [x] Cette partie n'est pas informative.
 - Description des fonctionnalités (hors interface et actions)
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Interface
   - [ ] Cette partie est informative et correspond au style de l'exemple.
-  - [ ] Cette partie est informative.
+  - [x] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Actions du joueur
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Scénarios
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Contraintes de développement
   - [ ] Cette partie est informative et correspond au style de l'exemple.
-  - [ ] Cette partie est informative.
+  - [x] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Fonctionnalités et scénarios avancés
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 
 
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 
-- Total d'item « Satisfaisant » (1 point) : 
-- Total d'item « Insatisfaisant » (0 point) :
-- total des points (sur 50) :
+- Total d'item « Excellent » (2 point) : 12 -> 24 points
+- Total d'item « Satisfaisant » (1 point) : 6 -> 6 points
+- Total d'item « Insatisfaisant » (0 point) : 2 items
+- total des points (sur 50) : 30 points
