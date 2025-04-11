@@ -69,21 +69,20 @@ public class GameManager : MonoBehaviour
     {
         if (informationManager == null)
             informationManager = GetComponent<InformationManager>();
-        
-        // Double vérification - si GetComponent ne fonctionne pas, essayons FindObjectOfType
+
         if (informationManager == null)
             informationManager = FindObjectOfType<InformationManager>();
-        
-        // Vérification finale pour éviter l'erreur
+
         if (informationManager == null)
         {
             Debug.LogError("InformationManager est null! Impossible de calculer le score.");
-            return; // Sortir de la fonction pour éviter l'erreur
+            return;
         }
+
         List<Information> allInfo = informationManager.GetAllInformations();
 
         int verifiedTrueCount = 0;
-        int trueInfoCount = 0;
+        int totalTrueCount = 0;
         int unverifiedCount = 0;
         int emptyCount = 0;
 
@@ -91,7 +90,7 @@ public class GameManager : MonoBehaviour
         {
             if (info.IsTrue)
             {
-                trueInfoCount++;
+                totalTrueCount++;
 
                 if (info.State == Information.InformationState.Verified)
                     verifiedTrueCount++;
@@ -108,17 +107,18 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        float denominator = trueInfoCount + unverifiedCount + (emptyCount * 2);
+        // Formule de calcul du score comme demandé :
+        float denominator = totalTrueCount + unverifiedCount + (emptyCount / 2f);
         float score = (denominator == 0) ? 0f : (verifiedTrueCount / denominator) * 100f;
 
         Debug.Log("Score = " + score.ToString("F2"));
 
-        // Stocker le score pour l'autre scène
         PlayerPrefs.SetFloat("Score", score);
         PlayerPrefs.Save();
 
         SceneManager.LoadScene("TransiAfter");
     }
+
 
     public bool UseQuestion()
     {
