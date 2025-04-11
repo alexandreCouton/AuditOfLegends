@@ -18,14 +18,16 @@ Après cet étape, vous aurez le projet en local.
 
 # ☛ Guide d'exécution du projet 
 
-Commencez par vous rendre [à cet endroit](https://seafile.unistra.fr/d/9b51570cb90144818da7/)  
+Ouvrez votre dossier qui contient le projet, ouvrez le dossier build.  
 
  ## ✤ Pour Windows
 
-Télécharger le fichier puis exécuter le.
+Cliquez sur l'installateur windows et suivez les étapes.
 
  ## ✤ Pour Linux
 
-Télécharger le ... ouvrez votre console là où vous avez installé votre projet. Puis exécutez les commandes suivantes :
+Exécutez les commandes suivantes après avoir ouvert un terminal dans le dossier build:
 
-> 
+```bash
+./BuildLinux/AuditOfLegends.
+```
