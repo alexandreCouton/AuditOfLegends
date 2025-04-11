@@ -43,9 +43,9 @@ Ajouter un système de points en fonction des performances des joueurs (temps, r
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
 - Procédure
-  - [ ] La procédure a été suivie à la lettre sans le moindre écart.
+  - [X] La procédure a été suivie à la lettre sans le moindre écart.
   - [ ] La procédure a été globalement suivie.
-  - [x] La procédure n'a pas été bien suivie.
+  - [ ] La procédure n'a pas été bien suivie.
 - Propositions d'amélioration du Cahier des charges
   - [ ] Au moins cinq propositions d'améliorations pertinente sont faites.
   - [ ] Au moins cinq propositions d'améliorations sont faites.
@@ -56,8 +56,8 @@ Ajouter un système de points en fonction des performances des joueurs (temps, r
   - [x] Moins de trois propositions d'améliorations sont faites.
 - Implication
   - [ ] L'implication T2 été vraiment été cruciale dans le processus du T4.
-  - [ ] L'implication T2 a permis d'améliorer le T4.
-  - [x] Il y a eu un défaut d'implication T2.
+  - [x] L'implication T2 a permis d'améliorer le T4.
+  - [ ] Il y a eu un défaut d'implication T2.
 
 ## Grille d'évaluation T2 (à remplir par l'enseignant)
 
@@ -84,9 +84,9 @@ Ajouter un système de points en fonction des performances des joueurs (temps, r
 
 
 ### Résultat T2
-- Total d'item « Excellent » (2 point) : 
-- Total d'item « Satisfaisant » (1 point) : 
-- Total d'item « Insatisfaisant » (0 point) :
+- Total d'item « Excellent » (2 point) : 1
+- Total d'item « Satisfaisant » (1 point) : 1
+- Total d'item « Insatisfaisant » (0 point) : 2
 - Total des points (sur 16) : 
 
 
@@ -193,7 +193,7 @@ Pour un exemple de ce qui est attenu, voir https://gitlab.unistra.fr/T234/t4-exe
 
 
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 
-- Total d'item « Satisfaisant » (1 point) : 
-- Total d'item « Insatisfaisant » (0 point) :
-- total des points (sur 50) :
+- Total d'item « Excellent » (2 point) : 20
+- Total d'item « Satisfaisant » (1 point) : 2
+- Total d'item « Insatisfaisant » (0 point) : 0
+- total des points (sur 50) : 42
