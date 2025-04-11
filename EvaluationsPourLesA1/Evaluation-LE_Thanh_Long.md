@@ -26,13 +26,19 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 # Propositions d'amélioration du cahier des charges
 
-- Proposition 1
-- Proposition 2
+Proposition 1 : Clarification des objectifs fonctionnels
+Ajouter une section dédiée aux fonctionnalités principales du jeu avec des scénarios d’utilisation concrets. Cela permettrait aux développeurs de mieux comprendre les attentes et d’éviter des interprétations floues.
+
+Proposition 2 : Ajout de critères de performance
+Intégrer des indicateurs de performance comme le temps de réponse du jeu ou la fluidité d’animation pour que l’évaluation du projet soit plus objective.
 
 # Propositions d'amélioration du jeu
 
-- Proposition 1
-- Proposition 2
+Proposition 1 : Ajout d’un système de niveaux de difficulté
+Intégrer plusieurs niveaux de difficulté (facile, moyen, difficile) afin d’adapter l'expérience aux différents types de joueurs et d’augmenter la rejouabilité du jeu.
+
+Proposition 2 : Intégration d’un système de scores et de classement
+Ajouter un système de points en fonction des performances des joueurs (temps, réussite, nombre d’essais, etc.), accompagné d’un tableau de classement. Cela encouragerait la compétition et l’engagement des utilisateurs.
 
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
