@@ -27,7 +27,10 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 # Propositions d'amélioration du cahier des charges
 
 - Proposition 1
+Définir ce qu'est concrétement un audit et un auditeur : la définition n'est pas clair, très floue. Cela rend la compréhension du but du jeu assez difficile puisqu´il s'agit du coeur même du sujet. 
+
 - Proposition 2
+
 
 # Propositions d'amélioration du jeu
 
