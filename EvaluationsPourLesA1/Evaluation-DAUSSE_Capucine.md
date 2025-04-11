@@ -189,7 +189,7 @@ Pour un exemple de ce qui est attenu, voir https://gitlab.unistra.fr/T234/t4-exe
 
 
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 
-- Total d'item « Satisfaisant » (1 point) : 
-- Total d'item « Insatisfaisant » (0 point) :
-- total des points (sur 50) :
+- Total d'item « Excellent » (2 point) : 15
+- Total d'item « Satisfaisant » (1 point) : 4
+- Total d'item « Insatisfaisant » (0 point) : 1
+- total des points (sur 50) : 34
