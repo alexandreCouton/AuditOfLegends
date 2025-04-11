@@ -51,8 +51,8 @@ Rajout d'une partie explicative sur le but et les actions requises du joueur ava
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
 - Procédure
-  - [ ] La procédure a été suivie à la lettre sans le moindre écart.
-  - [x] La procédure a été globalement suivie.
+  - [x] La procédure a été suivie à la lettre sans le moindre écart.
+  - [ ] La procédure a été globalement suivie.
   - [ ] La procédure n'a pas été bien suivie.
 - Propositions d'amélioration du Cahier des charges
   - [ ] Au moins cinq propositions d'améliorations pertinente sont faites.
