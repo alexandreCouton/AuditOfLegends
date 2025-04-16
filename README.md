@@ -15,37 +15,7 @@
 
 # ☛ Notre équipe
 
-L’équipe 🔥**Vos Gros Darons**🔥, composée de :
-
-🔸 **Antoine CHAUMET** 
-
-🔸 **Alexandre COUTON** 
-
-🔸 **Amine BELHAJ** 
-
-🔸 **Auguste DELAYE**
-
-Vous présente leur cahier des charges du projet **T4**.
-
----
-
-**Vos liens pour vos évaluations :** 
-
-[![Lien etudiant 1](https://img.shields.io/badge/Lien%20pour%20BAHLOUL%20Mehdi-orange)](EvaluationsPourLesA1/Evaluation-BAHLOUL_Mehdi.md)
-&nbsp;&nbsp;&nbsp;
-[![Lien etudiant 2](https://img.shields.io/badge/Lien%20pour%20BEBEY%20BENA%20Jason%20Scott-orange)](EvaluationsPourLesA1/Evaluation-BEBEY_BENA_Jason-Scott.md)
-&nbsp;&nbsp;&nbsp;
-[![Lien etudiant 3](https://img.shields.io/badge/Lien%20pour%20DAUSSE%20Capucine-orange)](EvaluationsPourLesA1/Evaluation-DAUSSE_Capucine.md)
-&nbsp;&nbsp;&nbsp;
-[![Lien etudiant 4](https://img.shields.io/badge/Lien%20pour%20DOVYBYSCH%20Oleksii-orange)](EvaluationsPourLesA1/Evaluation-DOVYBYSCH_Oleksii.md)
-&nbsp;&nbsp;&nbsp;
-[![Lien etudiant 5](https://img.shields.io/badge/Lien%20pour%20FOUILLEUL%20Elora-orange)](EvaluationsPourLesA1/Evaluation-FOUILLEUL_Elora.md)
-&nbsp;&nbsp;&nbsp;
-[![Lien etudiant 6](https://img.shields.io/badge/Lien%20pour%20GOMES%20Abel-orange)](EvaluationsPourLesA1/Evaluation-GOMES_Abel.md)
-&nbsp;&nbsp;&nbsp;
-[![Lien etudiant 7](https://img.shields.io/badge/Lien%20pour%20LE%20Thanh%20Long-orange)](EvaluationsPourLesA1/Evaluation-LE_Thanh_Long.md)
-
-> Si vous avez du mal ou ne savez simplement pas comment tester notre prototype, vous pouvez retrouver [notre guide d'installation et d'execution.](Install.md)
+L’équipe 🔥**VGD**🔥vous présente leur cahier des charges du projet **T4**.
 
 # ☛ Présentation du projet
 
